@@ -13,3 +13,5 @@ Project writes use a lock and atomic replacement with a metadata backup. A proje
 - **macOS distribution:** this local build is an unsigned Apple Silicon preview, not an Apple-notarized public release.
 
 Do not edit request.json or saved objects unless deliberately debugging/reproducing an analysis. Open external HTML/PDF plots only from trusted projects.
+
+- **Windows distribution:** use the x64 setup installer. The bundled runtime requires no separate R installation. Builds are unsigned; verify the release checksum before installing.

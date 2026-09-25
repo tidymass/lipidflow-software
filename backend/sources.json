@@ -1,5 +1,6 @@
 {
   "lipidflow": "7a44a1f341973de2db81af6c9c191bf40e30a13e",
   "lipidflowshiny": "39a0a828dfae85d0820ef1dca937028760d855ef",
-  "base": "TidyMass Desktop 0.1.65"
+  "base": "TidyMass Desktop 0.1.65",
+  "sxtTools": "209d7ecd37240bbacc3c27a93050f50bdfb24f0b"
 }

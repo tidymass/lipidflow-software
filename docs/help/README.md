@@ -1,6 +1,6 @@
 # LipidFlow Desktop help
 
-LipidFlow Desktop is a standalone macOS application based on TidyMass Desktop 0.1.65. It has one workflow and one analysis tool. All computation runs locally in the bundled R environment.
+LipidFlow Desktop is a standalone macOS and Windows application based on TidyMass Desktop 0.1.65. It has one workflow and one analysis tool. All computation runs locally in the bundled R environment.
 
 - [Workflow](workflow.md): import, peak picking, annotation, quantification and export
 - [Internal standard exploration](peak-extraction.md): QC chromatograms, candidate adducts and internal standards
@@ -8,13 +8,13 @@ LipidFlow Desktop is a standalone macOS application based on TidyMass Desktop 0.
 
 ## Quick start
 
-Open `release/mac-arm64/LipidFlow.app`. From **Workflow**, choose **Untargeted lipidomics** to create a workflow project or open **Analysis tools** and choose **Internal standard exploration** to create a tool project. Choose a parent directory; a new project folder is created without replacing an existing folder.
+On macOS, open `LipidFlow.app`. On Windows, install the Windows x64 setup executable and open **LipidFlow** from the Start menu. From **Workflow**, choose **Untargeted lipidomics** to create a workflow project or open **Analysis tools** and choose **Internal standard exploration** to create a tool project. Choose a parent directory; a new project folder is created without replacing an existing folder.
 
 For a complete study, prepare mzML/mzXML files, MS2 files for annotation, an internal-standard concentration workbook and polarity-specific Y_IS_opt tables from Internal standard exploration.
 
 ## 中文快速入门
 
-本软件是独立的 LipidFlow macOS 桌面应用，沿用 TidyMass 的界面和本地分析架构。首页只有一个 Untargeted lipidomics workflow 和一个 Internal standard exploration 工具。
+本软件是独立的 LipidFlow macOS / Windows 桌面应用，沿用 TidyMass 的界面和本地分析架构。首页只有一个 Untargeted lipidomics workflow 和一个 Internal standard exploration 工具。
 
 1. 在首页创建项目，选择本地保存位置。
 2. 主流程依次为：数据导入、峰提取、脂质注释、绝对定量、结果导出。

@@ -32,6 +32,6 @@ The engine calls Shiny's table adapter and `lipidflow::get_absolute_quantificati
 
 ## Results and export
 
-Run **Prepare export** to produce the full quantification bundle, including unit-specific workbooks, lipid-class tables, composition PDFs and intensity plots. The download icon exports the selected run folder. The folder icon opens it in Finder. Tables show up to 1,000 rows; the CSV contains all rows.
+Run **Prepare export** to produce the full quantification bundle, including unit-specific workbooks, lipid-class tables, composition PDFs and intensity plots. The download icon exports the selected run folder. The folder icon opens it in your file browser. Tables show up to 1,000 rows; the CSV contains all rows.
 
 Earlier successful runs remain available in Run history. Re-running an upstream stage invalidates downstream workflow results as active inputs without deleting historical artifacts.
