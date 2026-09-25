@@ -1,6 +1,6 @@
 {
   "name": "lipidflow-desktop",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "private": true,
   "description": "LipidFlow Desktop \u2014 local lipidomics analysis",
   "main": "electron/main.cjs",
