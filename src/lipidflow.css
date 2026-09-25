@@ -49,3 +49,14 @@
 .lf-candidate-view,.lf-full-is-table{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}.lf-candidate-view>.table-scroll,.lf-full-is-table>.table-scroll{max-height:none;flex:1;min-height:0}.lf-candidate-view>p{margin:12px 0;font-size:11px}
 @media(max-width:1200px){.lf-review-layout .lf-workspace{padding:0 14px 12px}.lf-review-split{grid-template-columns:240px minmax(0,1fr)}.lf-review-split .lf-is-detail{padding:10px}.lf-detail-title{align-items:flex-start}.lf-detail-title .pill{max-width:120px;white-space:normal}.lf-review-layout .lf-workspace-heading{padding:10px 14px}.lf-is-results .lf-result-toolbar>span{display:none}.lf-review-split .lf-adduct-confirm{gap:6px}.lf-review-split .lf-adduct-confirm .button{font-size:10px;padding:6px 8px}}
 .lf-review-layout .eyebrow{margin-bottom:0}.lf-review-layout .lf-adduct-confirm .button,.lf-review-layout .lf-peak-chart .button{margin-top:0;min-height:0}.lf-review-layout .lf-alert{padding:5px 10px;font-size:11px;line-height:16px}.lf-is-list th{height:34px}.lf-is-list .lf-sort{white-space:nowrap;overflow-wrap:normal}.lf-detail-body .lf-trace-controls{margin-top:7px;margin-bottom:5px}.lf-detail-body .lf-trace-controls fieldset{max-height:56px}.lf-review-layout .lf-workspace-heading{padding-top:10px;padding-bottom:10px}
+/* Native Windows chrome leaves about 635 px of content in a 700 px window. */
+@media(max-height:700px){
+ .lf-review-layout .topbar{height:38px}
+ .lf-review-layout .lf-workspace-heading{padding-top:6px;padding-bottom:6px}
+ .lf-review-layout .lf-workspace-heading h1{font-size:20px;margin-top:2px}
+ .lf-review-layout .lf-tabs button{padding-top:8px;padding-bottom:8px}
+ .lf-is-results .lf-result-toolbar{padding-top:6px;padding-bottom:6px}
+ .lf-review-split .lf-adduct-confirm{margin-top:6px;margin-bottom:6px}
+ .lf-detail-title h2{font-size:16px;margin-top:3px;margin-bottom:3px}
+ .lf-detail-body .lf-peak-chart{min-height:0}
+}
