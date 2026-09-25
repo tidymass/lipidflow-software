@@ -64,6 +64,20 @@ main <- function(){
   }
  }
  if(op=='picking'){
+  bool <- function(k, default) {v<-p[[k]] %||% default;if(!is.logical(v)||length(v)!=1||is.na(v))stop('Invalid parameter: ',k);v}
+  integer_param <- function(k,default,min=0,max=Inf){v<-num(k,default,min,max);if(v!=floor(v))stop('Expected integer parameter: ',k);as.integer(v)}
+  algorithm<-p$detectPeakAlgorithm %||% 'xcms'
+  if(length(algorithm)!=1||!algorithm %in% c('xcms','massprocesser'))stop('Invalid detection algorithm.')
+  figure_group<-p$groupForFigure %||% 'QC'
+  if(!is.character(figure_group)||length(figure_group)!=1||!nzchar(trimws(figure_group)))stop('Specify a group for figures.')
+  picking_args<-list(ppm=num('ppm',15,.Machine$double.eps),peakwidth=c(num('peakMin',10,.Machine$double.eps),num('peakMax',60,.Machine$double.eps)),
+    snthresh=num('sn',5),prefilter=c(integer_param('prefilterScans',3,1),num('prefilterIntensity',500)),
+    fitgauss=bool('fitgauss',FALSE),integrate=integer_param('integrate',2,1,2),mzdiff=num('mzdiff',.01,-Inf),noise=num('noise',500),
+    binSize=num('binSize',.025,.Machine$double.eps),bw=num('bw',5,.Machine$double.eps),min_fraction=num('minFraction',.5,0,1),
+    output_tic=bool('outputTic',TRUE),output_bpc=bool('outputBpc',TRUE),output_rt_correction_plot=bool('outputRt',TRUE),
+    fill_peaks=TRUE,group_for_figure=trimws(figure_group),detect_peak_algorithm=algorithm)
+  requested_threads<-integer_param('threads',0,0,4)
+
   if(num('peakMax',60,0)<=num('peakMin',10,0))stop('Maximum peak width must exceed minimum.')
   for(side in names(state$sides)){
    s<-state$sides[[side]];f<-s$raw;if(!length(f))stop('Import raw data first.')
@@ -76,8 +90,11 @@ main <- function(){
     sample_dir<-file.path(rawroot,toupper(side),group);dir.create(sample_dir,recursive=TRUE,showWarnings=FALSE)
     if(!all(file.copy(f[groups==group],sample_dir,overwrite=FALSE)))stop('Could not stage all raw files for peak picking.')
    }
-   threads<-.lfs_auto_threads_pp(length(f),requested=num('threads',0,0,4),per_worker_bytes=mean(file.info(f)$size))
-   lf_process_data(path=file.path(rawroot,toupper(side)),polarity=if(side=='pos')'positive' else 'negative',threads=threads,ppm=num('ppm',15,1),peakwidth=c(num('peakMin',10),num('peakMax',60)),snthresh=num('sn',5),prefilter=c(3,500),fitgauss=FALSE,integrate=2,mzdiff=0.01,noise=num('noise',500),binSize=0.025,bw=5,output_tic=TRUE,output_bpc=TRUE,output_rt_correction_plot=TRUE,min_fraction=num('minFraction',0.5,0,1),fill_peaks=FALSE,group_for_figure='QC',detect_peak_algorithm='xcms')
+   threads<-.lfs_auto_threads_pp(length(f),requested=requested_threads,per_worker_bytes=mean(file.info(f)$size))
+   effective_args<-c(list(path=file.path(rawroot,toupper(side)),polarity=if(side=='pos')'positive' else 'negative',threads=threads),picking_args)
+   write_json(effective_args,file.path(out,paste0(toupper(side),'_peak_picking_parameters.json')))
+   cat('Missing peak filling enabled (xcms::fillChromPeaks).\n')
+   do.call(lf_process_data,effective_args)
    s$object<-load_object(file.path(rawroot,toupper(side),'Result','object'));s$peaks<-.lfs_peak_table(s$object);s$annotations<-NULL;s[["quant"]]<-NULL;state$sides[[side]]<-s;gc()
   }
  }

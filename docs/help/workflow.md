@@ -14,6 +14,10 @@ Internal-standard inputs are provided only at Absolute quantification, not durin
 
 Uses `massprocesser::process_data()` and xcms CentWave. Defaults match Shiny: 15 ppm, 10–60 s peak widths, S/N 5, noise 500, minimum fraction 0.5. Workers = 0 selects a memory-aware count capped at four. POS and NEG run sequentially and remain separate objects. A new run directory avoids reuse of old peak-picking caches.
 
+All arguments of the bundled `massprocesser::process_data()` are covered: path and polarity come from the workflow; worker count remains memory-aware. Peak detection includes `ppm`, `peakwidth`, `snthresh`, `prefilter` (scan count and intensity), `fitgauss`, `integrate` (1: smoothed signal, 2: raw signal), `mzdiff` (negative values allow overlap), `noise`, and `detect_peak_algorithm` (xcms or massprocesser). Grouping exposes `binSize`, `bw`, and `min_fraction`. Diagnostic controls expose `output_tic`, `output_bpc`, `output_rt_correction_plot`, and `group_for_figure` (default QC; upstream falls back when absent). Advanced sections collapse to keep the form manageable.
+
+`fill_peaks` is always TRUE, including when rerunning older projects. After grouping, xcms re-integrates raw signal for missing features; this is chromatographic gap filling, not statistical imputation, and cannot guarantee every missing value is resolved. RT correction uses upstream Obiwarp with a fixed bin size of 0.5; the editable grouping bin size is a different parameter. Effective arguments, including automatic worker count and enabled filling, are saved in `POS_peak_picking_parameters.json` / `NEG_peak_picking_parameters.json` in each run.
+
 Peak tables and mass_dataset RDA files are saved. QC figures produced by massprocesser are in the raw/POS or raw/NEG Result folder of the run.
 
 ## Lipid annotation
