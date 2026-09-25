@@ -36,7 +36,7 @@ main <- function(){
    s<-list();suffix<-function(k)p[[paste0(k,'_',side)]]
    if(state$kind=='raw'){
     f<-files(suffix('raw'));if(!length(f))stop('Choose ',toupper(side),' raw files.');if(any(!file.exists(f)))stop('Raw file missing.');if(anyDuplicated(basename(f)))stop('Raw filenames must be unique within each polarity.');if(any(!tolower(tools::file_ext(f))%in%c('mzxml','mzml')))stop('Expected mzML or mzXML.');s$raw<-normalizePath(f)
-    table_out(paste0(toupper(side),' input files'),data.frame(file=basename(f),group=vapply(basename(f),.lfs_infer_group,character(1)),bytes=file.info(f)$size))
+    table_out(paste0(toupper(side),' input files'),data.frame(file=basename(f),bytes=file.info(f)$size))
    }else if(state$kind=='objects'){
     s$object<-load_object(copy_input(suffix('object'),paste0(side,'_object')));if(!methods::is(s$object,'mass_dataset'))stop('Expected a mass_dataset object.');s$peaks<-.lfs_peak_table(s$object)
    }else if(state$kind=='tables'){
@@ -52,7 +52,10 @@ main <- function(){
   for(side in names(state$sides)){
    s<-state$sides[[side]];f<-s$raw;if(!length(f))stop('Import raw data first.')
    cat('Processing ',toupper(side),'\n');flush(stdout())
-   rawroot<-file.path(out,'raw');.lfs_organize_uploads(data.frame(name=basename(f),datapath=f),rawroot,toupper(side))
+   # One technical sample set per polarity; filenames do not define experimental groups.
+   rawroot<-file.path(out,'raw');sample_dir<-file.path(rawroot,toupper(side),'Samples')
+   dir.create(sample_dir,recursive=TRUE,showWarnings=FALSE)
+   if(!all(file.copy(f,sample_dir,overwrite=FALSE)))stop('Could not stage all raw files for peak picking.')
    threads<-.lfs_auto_threads_pp(length(f),requested=num('threads',0,0,4),per_worker_bytes=mean(file.info(f)$size))
    lf_process_data(path=file.path(rawroot,toupper(side)),polarity=if(side=='pos')'positive' else 'negative',threads=threads,ppm=num('ppm',15,1),peakwidth=c(num('peakMin',10),num('peakMax',60)),snthresh=num('sn',5),prefilter=c(3,500),fitgauss=FALSE,integrate=2,mzdiff=0.01,noise=num('noise',500),binSize=0.025,bw=5,output_tic=TRUE,output_bpc=TRUE,output_rt_correction_plot=TRUE,min_fraction=num('minFraction',0.5,0,1),fill_peaks=FALSE,group_for_figure='QC',detect_peak_algorithm='xcms')
    s$object<-load_object(file.path(rawroot,toupper(side),'Result','object'));s$peaks<-.lfs_peak_table(s$object);s$annotations<-NULL;s[["quant"]]<-NULL;state$sides[[side]]<-s;gc()

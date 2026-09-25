@@ -4,7 +4,7 @@
 
 Choose POS, NEG or both. Start with one of three input types:
 
-- **Raw files:** mzML/mzXML. Filenames must be unique within a polarity. Groups are inferred from filenames using the same helper as LipidFlow Shiny; e.g. `Control_1` and `Control_2` belong to Control. Raw files remain at their original locations until peak picking makes a run-local copy.
+- **Raw files:** mzML/mzXML. Filenames must be unique within a polarity. Experimental groups are not inferred from filenames or folders, and sample information is not required during import. Peak picking treats all files of a polarity as one sample set; its minimum-fraction filter applies across that set. Experimental grouping is reserved for a future statistics step using sample information. Raw files remain at their original locations until peak picking makes a run-local copy.
 - **Existing objects:** mass_dataset RDA/RData or RDS objects from peak picking. Continue directly to annotation.
 - **Existing tables:** peak table and annotation table CSVs. Continue directly to absolute quantification. Peak tables contain variable_id, mz, rt and numeric sample intensity columns; annotation tables identify variable_id and Compound.name (or name).
 
