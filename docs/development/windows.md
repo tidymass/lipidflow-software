@@ -2,7 +2,7 @@
 
 Windows x64 uses the same React UI, Electron IPC, R worker, scientific helpers and databases as the macOS 0.1.12 baseline. It includes the complete workflow, internal-standard review with manual adduct confirmation, downloads, recent projects and Wang Lab branding.
 
-Latest verified build: [Windows 0.1.12 acceptance record](../validation/windows-0.1.12.md), including the installer download and actual Windows screenshots.
+Latest verified build: [Demo-free 0.1.13 installers](../validation/installers-0.1.13.md). The [0.1.12 acceptance record](../validation/windows-0.1.12.md) retains the earlier Windows screenshots.
 
 ## Build
 
@@ -17,7 +17,7 @@ npm run pack:windows
 
 The Windows runtime is restored from `packaging/r-packages.lock.json`, generated from the macOS package versions. The unused MetMiner Shiny application inherited from TidyMass is excluded; no LipidFlow analysis function depends on it. Native packages are built for Windows; macOS binaries are never copied. The restore verifies every package version and writes source, license and native-binary manifests. End users do not need R, Rtools or Node.
 
-The unsigned per-user installer is written to `release/windows/LipidFlow-0.1.12-windows-x64-setup.exe`. Windows may display a publisher warning because no signing certificate is configured. Projects and application settings are preserved on uninstall.
+The unsigned per-user installer is written to `release/windows/LipidFlow-0.1.13-windows-x64-setup.exe`. Windows may display a publisher warning because no signing certificate is configured. Projects and application settings are preserved on uninstall.
 
 ## Automated acceptance checks
 
@@ -26,3 +26,7 @@ The unsigned per-user installer is written to `release/windows/LipidFlow-0.1.12-
 ## Updating the shared baseline
 
 After intentionally updating the macOS runtime, run `npm run snapshot:runtime` on macOS and review the lockfile changes. Locally installed packages without source provenance require a commit-pinned entry in `packaging/r-source-overrides.json`. Do not substitute newer package versions only on Windows.
+
+## Demo data packaging
+
+From 0.1.13, both installers exclude the lipidflow package POS and NEG example directories, including example mzXML and spreadsheets. Analysis functions, R dependencies, licenses and the POS/NEG MS-DIAL reference databases remain bundled. Development and CI fetch pinned examples separately, so real-data regression tests do not depend on shipping those examples. A post-packaging check and an installed-resource check reject installers containing these demo directories.

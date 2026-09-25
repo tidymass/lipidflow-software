@@ -1,6 +1,6 @@
 # LipidFlow Desktop validation
 
-Latest Windows results: [0.1.12 acceptance record](validation/windows-0.1.12.md).
+Latest installer results: [Demo-free macOS and Windows 0.1.13](validation/installers-0.1.13.md). Earlier Windows details: [0.1.12 acceptance record](validation/windows-0.1.12.md).
 
 ## Historical macOS 0.1.0 validation
 
