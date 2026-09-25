@@ -2,6 +2,8 @@
 
 Windows x64 uses the same React UI, Electron IPC, R worker, scientific helpers and databases as the macOS 0.1.12 baseline. It includes the complete workflow, internal-standard review with manual adduct confirmation, downloads, recent projects and Wang Lab branding.
 
+Latest verified build: [Windows 0.1.12 acceptance record](../validation/windows-0.1.12.md), including the installer download and actual Windows screenshots.
+
 ## Build
 
 Use Windows x64, Node 22, Python 3.12, R 4.5.2 and Rtools45. From a fresh checkout:

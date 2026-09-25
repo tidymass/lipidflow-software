@@ -1,4 +1,8 @@
-# Validation — LipidFlow Desktop 0.1.0
+# LipidFlow Desktop validation
+
+Latest Windows results: [0.1.12 acceptance record](validation/windows-0.1.12.md).
+
+## Historical macOS 0.1.0 validation
 
 Validated on macOS / Apple Silicon, 2026-09-25. These checks validate software behavior, not biological performance or identification accuracy in an independent cohort.
 
@@ -26,7 +30,7 @@ Evidence is under [validation/](validation/). The R environment emits an inherit
 
 ## Practical limits
 
-This is an unsigned local Apple Silicon preview. Intel, Windows and Linux builds are not validated. Quantification intentionally follows the Shiny QC-area method, including upstream class matching; it is not a per-sample isotope-dilution workflow. POS raw examples and reference-spectrum fixtures were used for validation; complete POS+NEG biological study validation is still needed with the user's study data. The current upstream quantification implementation requires at least two sample columns.
+The 0.1.0 validation described above was an unsigned local Apple Silicon preview; Intel, Windows and Linux were not validated at that milestone. See [Windows build and validation](development/windows.md) for the later Windows port and [test-data provenance](validation/test-data.md) for the datasets used. Quantification intentionally follows the Shiny QC-area method, including upstream class matching; it is not a per-sample isotope-dilution workflow. POS raw examples and reference-spectrum fixtures were used for validation; complete POS+NEG biological study validation is still needed with the user's study data. The current upstream quantification implementation requires at least two sample columns.
 
 
 ## 0.1.5 internal-standard review
