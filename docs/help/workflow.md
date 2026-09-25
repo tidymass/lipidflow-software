@@ -4,11 +4,11 @@
 
 Choose POS, NEG or both. Start with one of three input types:
 
-- **Raw files:** mzML/mzXML. Filenames must be unique within a polarity. Experimental groups are not inferred from filenames or folders, and sample information is not required during import. Peak picking treats all files of a polarity as one sample set; its minimum-fraction filter applies across that set. Experimental grouping is reserved for a future statistics step using sample information. Raw files remain at their original locations until peak picking makes a run-local copy.
+- **Raw data folder:** choose one parent folder for each polarity. Place mzML/mzXML files directly inside its sample-group subfolders (for example `POS/QC/sample1.mzXML` and `POS/D25/sample2.mzXML`). Subfolder names define groups; filenames do not. Raw filenames must be unique across groups within a polarity. Files at the parent level or deeper nested raw files are rejected. Raw files stay at their original locations until peak picking stages a run-local copy preserving these groups. Avoid naming a group `Result` or `Results`, which are reserved for processing output.
 - **Existing objects:** mass_dataset RDA/RData or RDS objects from peak picking. Continue directly to annotation.
 - **Existing tables:** peak table and annotation table CSVs. Continue directly to absolute quantification. Peak tables contain variable_id, mz, rt and numeric sample intensity columns; annotation tables identify variable_id and Compound.name (or name).
 
-An optional polarity-specific Y_IS_opt CSV may be loaded here or later during quantification. Retention times are in seconds.
+Internal-standard inputs are provided only at Absolute quantification, not during import. Retention times are in seconds.
 
 ## Peak picking
 
