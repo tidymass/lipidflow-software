@@ -1,0 +1,3035 @@
+{
+  "R": {
+    "Version": "4.5.2",
+    "Repositories": [
+      {
+        "Name": "CRAN",
+        "URL": "https://cloud.r-project.org"
+      }
+    ]
+  },
+  "Bioconductor": {
+    "Version": "3.21"
+  },
+  "Packages": {
+    "AnnotationDbi": {
+      "Package": "AnnotationDbi",
+      "Version": "1.70.0",
+      "Depends": "R (>= 2.7.0), methods, stats4, BiocGenerics (>= 0.29.2), Biobase (>= 1.17.0), IRanges",
+      "Imports": "DBI, RSQLite, S4Vectors (>= 0.9.25), stats, KEGGREST",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "AnnotationFilter": {
+      "Package": "AnnotationFilter",
+      "Version": "1.32.0",
+      "Depends": "R (>= 3.4.0)",
+      "Imports": "utils, methods, GenomicRanges, lazyeval",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "BH": {
+      "Package": "BH",
+      "Version": "1.87.0-1",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "BWStest": {
+      "Package": "BWStest",
+      "Version": "0.2.3",
+      "Imports": "memoise, Rcpp (>= 0.12.3)",
+      "LinkingTo": "Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "BayesFactor": {
+      "Package": "BayesFactor",
+      "Version": "0.9.12-4.7",
+      "Depends": "R (>= 3.2.0), coda, Matrix (>= 1.1-1)",
+      "Imports": "pbapply, mvtnorm, stringr, utils, graphics, MatrixModels, Rcpp (>= 0.11.2), methods, hypergeo",
+      "LinkingTo": "Rcpp (>= 0.11.2), RcppEigen (>= 0.3.2.2.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "Biobase": {
+      "Package": "Biobase",
+      "Version": "2.68.0",
+      "Depends": "R (>= 2.10), BiocGenerics (>= 0.27.1), utils",
+      "Imports": "methods",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "BiocBaseUtils": {
+      "Package": "BiocBaseUtils",
+      "Version": "1.10.0",
+      "Depends": "R (>= 4.2.0)",
+      "Imports": "methods, utils",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "BiocGenerics": {
+      "Package": "BiocGenerics",
+      "Version": "0.54.0",
+      "Depends": "R (>= 4.0.0), methods, utils, graphics, stats, generics",
+      "Imports": "methods, utils, graphics, stats",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "BiocManager": {
+      "Package": "BiocManager",
+      "Version": "1.30.26",
+      "Imports": "utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "BiocParallel": {
+      "Package": "BiocParallel",
+      "Version": "1.42.1",
+      "Depends": "methods, R (>= 4.1.0)",
+      "Imports": "stats, utils, futile.logger, parallel, snow, codetools",
+      "LinkingTo": "BH (>= 1.87.0), cpp11",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "BiocSingular": {
+      "Package": "BiocSingular",
+      "Version": "1.24.0",
+      "Imports": "BiocGenerics, S4Vectors, Matrix, methods, utils, DelayedArray, BiocParallel, ScaledMatrix, irlba, rsvd, Rcpp, beachmat (>= 2.21.1)",
+      "LinkingTo": "Rcpp, beachmat, assorthead",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "BiocVersion": {
+      "Package": "BiocVersion",
+      "Version": "3.22.0",
+      "Depends": "R (>= 4.4.0)",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "bioc",
+      "RemoteRepo": "BiocVersion",
+      "RemoteSha": "fea53ac938311018c7513d2339cdd5f928cd72c5",
+      "RemoteRef": "fea53ac938311018c7513d2339cdd5f928cd72c5"
+    },
+    "Biostrings": {
+      "Package": "Biostrings",
+      "Version": "2.76.0",
+      "Depends": "R (>= 4.1.0), BiocGenerics (>= 0.37.0), S4Vectors (>= 0.27.12), IRanges (>= 2.31.2), XVector (>= 0.37.1), GenomeInfoDb",
+      "Imports": "methods, utils, grDevices, stats, crayon",
+      "LinkingTo": "S4Vectors, IRanges, XVector",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "ComplexHeatmap": {
+      "Package": "ComplexHeatmap",
+      "Version": "2.24.1",
+      "Depends": "R (>= 4.0.0), methods, grid, graphics, stats, grDevices",
+      "Imports": "circlize (>= 0.4.14), GetoptLong, colorspace, clue, RColorBrewer, GlobalOptions (>= 0.1.0), png, digest, IRanges, matrixStats, foreach, doParallel, codetools",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "DBI": {
+      "Package": "DBI",
+      "Version": "1.2.3",
+      "Depends": "methods, R (>= 3.0.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "DEoptimR": {
+      "Package": "DEoptimR",
+      "Version": "1.1-4",
+      "Imports": "stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "DOSE": {
+      "Package": "DOSE",
+      "Version": "4.2.0",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "AnnotationDbi, BiocParallel, fgsea, ggplot2, GOSemSim (>= 2.31.2), methods, qvalue, reshape2, stats, utils, yulab.utils (>= 0.1.6)",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "DT": {
+      "Package": "DT",
+      "Version": "0.33",
+      "Imports": "htmltools (>= 0.3.6), htmlwidgets (>= 1.3), httpuv, jsonlite (>= 0.9.16), magrittr, crosstalk, jquerylib, promises",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "DelayedArray": {
+      "Package": "DelayedArray",
+      "Version": "0.34.1",
+      "Depends": "R (>= 4.0.0), methods, stats4, Matrix, BiocGenerics (>= 0.53.3), MatrixGenerics (>= 1.1.3), S4Vectors (>= 0.27.2), IRanges (>= 2.17.3), S4Arrays (>= 1.5.4), SparseArray (>= 1.7.5)",
+      "Imports": "stats",
+      "LinkingTo": "S4Vectors",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "DelayedMatrixStats": {
+      "Package": "DelayedMatrixStats",
+      "Version": "1.30.0",
+      "Depends": "MatrixGenerics (>= 1.15.1), DelayedArray (>= 0.31.7)",
+      "Imports": "methods, sparseMatrixStats (>= 1.13.2), Matrix (>= 1.5-0), S4Vectors (>= 0.17.5), IRanges (>= 2.25.10), SparseArray (>= 1.5.19)",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "Deriv": {
+      "Package": "Deriv",
+      "Version": "4.2.0",
+      "Imports": "methods",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "Formula": {
+      "Package": "Formula",
+      "Version": "1.2-5",
+      "Depends": "R (>= 2.0.0), stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "GO.db": {
+      "Package": "GO.db",
+      "Version": "3.21.0",
+      "Depends": "R (>= 2.7.0), methods, AnnotationDbi (>= 1.69.0)",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "GOSemSim": {
+      "Package": "GOSemSim",
+      "Version": "2.34.0",
+      "Depends": "R (>= 4.2.0)",
+      "Imports": "AnnotationDbi, DBI, digest, GO.db, methods, rlang, R.utils, stats, utils, yulab.utils (>= 0.1.6)",
+      "LinkingTo": "Rcpp",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "GenomeInfoDb": {
+      "Package": "GenomeInfoDb",
+      "Version": "1.44.2",
+      "Depends": "R (>= 4.0.0), methods, BiocGenerics (>= 0.53.2), S4Vectors (>= 0.45.2), IRanges (>= 2.41.1)",
+      "Imports": "stats, stats4, utils, UCSC.utils, GenomeInfoDbData",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "GenomeInfoDbData": {
+      "Package": "GenomeInfoDbData",
+      "Version": "1.2.14",
+      "Depends": "R (>= 3.5.0)",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "GenomicRanges": {
+      "Package": "GenomicRanges",
+      "Version": "1.60.0",
+      "Depends": "R (>= 4.0.0), methods, stats4, BiocGenerics (>= 0.53.2), S4Vectors (>= 0.45.2), IRanges (>= 2.41.1), GenomeInfoDb (>= 1.43.1)",
+      "Imports": "utils, stats, XVector (>= 0.29.2)",
+      "LinkingTo": "S4Vectors, IRanges",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "GetoptLong": {
+      "Package": "GetoptLong",
+      "Version": "1.0.5",
+      "Depends": "R (>= 3.3.0)",
+      "Imports": "rjson, GlobalOptions (>= 0.1.0), methods, crayon",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "GlobalOptions": {
+      "Package": "GlobalOptions",
+      "Version": "0.1.2",
+      "Depends": "R (>= 3.3.0), methods",
+      "Imports": "utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "Hmisc": {
+      "Package": "Hmisc",
+      "Version": "5.2-3",
+      "Depends": "R (>= 4.2.0)",
+      "Imports": "methods, ggplot2, cluster, rpart, nnet, foreign, gtable, grid, gridExtra, data.table, htmlTable (>= 1.11.0), viridis, htmltools, base64enc, colorspace, rmarkdown, knitr, Formula",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "IRanges": {
+      "Package": "IRanges",
+      "Version": "2.42.0",
+      "Depends": "R (>= 4.0.0), methods, utils, stats, BiocGenerics (>= 0.53.2), S4Vectors (>= 0.45.4)",
+      "Imports": "stats4",
+      "LinkingTo": "S4Vectors",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "KEGGREST": {
+      "Package": "KEGGREST",
+      "Version": "1.48.1",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "methods, httr, png, Biostrings",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "KernSmooth": {
+      "Package": "KernSmooth",
+      "Version": "2.23-26",
+      "Depends": "R (>= 2.5.0), stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "MALDIquant": {
+      "Package": "MALDIquant",
+      "Version": "1.22.3",
+      "Depends": "R (>= 4.0.0), methods",
+      "Imports": "parallel",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "MASS": {
+      "Package": "MASS",
+      "Version": "7.3-65",
+      "Depends": "R (>= 4.4.0), grDevices, graphics, stats, utils",
+      "Imports": "methods",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "MDAtoolkits": {
+      "Package": "MDAtoolkits",
+      "Version": "0.0.3",
+      "Depends": "R (>= 3.10)",
+      "Imports": "config (>= 0.3.1), golem (>= 0.3.1), RCurl, rstatix, ggplotify, ggplot2, jsonlite, crayon, tidyverse, rlang, curl, purrr, furrr, stringr, rvest, XML, progressr, progress, future, magrittr, tidyr, dplyr",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ShawnWx2019",
+      "RemoteRepo": "MDAtoolkits",
+      "RemoteRef": "b580da64b0202de56998304688470f034274bf91",
+      "RemoteSha": "b580da64b0202de56998304688470f034274bf91"
+    },
+    "MSnbase": {
+      "Package": "MSnbase",
+      "Version": "2.34.1",
+      "Depends": "R (>= 3.5), methods, BiocGenerics (>= 0.7.1), Biobase (>= 2.15.2), mzR (>= 2.29.3), S4Vectors, ProtGenerics (>= 1.29.1)",
+      "Imports": "MsCoreUtils, PSMatch, BiocParallel, IRanges (>= 2.13.28), plyr, vsn, grid, stats4, affy, impute, pcaMethods, MALDIquant (>= 1.16), mzID (>= 1.5.2), digest, lattice, ggplot2, scales, MASS, Rcpp",
+      "LinkingTo": "Rcpp",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "MassSpecWavelet": {
+      "Package": "MassSpecWavelet",
+      "Version": "1.74.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "Matrix": {
+      "Package": "Matrix",
+      "Version": "1.7-4",
+      "Depends": "R (>= 4.4), methods",
+      "Imports": "grDevices, graphics, grid, lattice, stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "MatrixGenerics": {
+      "Package": "MatrixGenerics",
+      "Version": "1.20.0",
+      "Depends": "matrixStats (>= 1.4.1)",
+      "Imports": "methods",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "MatrixModels": {
+      "Package": "MatrixModels",
+      "Version": "0.5-4",
+      "Depends": "R (>= 3.6.0)",
+      "Imports": "stats, methods, Matrix (>= 1.6-0), Matrix(< 1.8-0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "MetMiner": {
+      "Package": "MetMiner",
+      "Version": "1.0.1",
+      "Imports": "config (>= 0.3.2), golem (>= 0.4.1), shiny (>= 1.8.1.1), MDAtoolkits, ggplot2, massdataset, metid, ComplexHeatmap, DT, PCAtools, RCurl, bsicons, circlize, clusterProfiler, dashboardthemes, dplyr, enrichplot, ggforce, ggrepel, ggsci, ggstatsplot, magrittr, masscleaner, massprocesser, plotly, purrr, ropls, shinyFiles, shinyWidgets, shinyjqui, shinyjs, shinythemes, stringr, tibble, tidyr, writexl, tidyverse, tidymass, shinyalert, colourpicker",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ShawnWx2019",
+      "RemoteRepo": "MetMiner",
+      "RemoteRef": "6585bbccccd0fa82b18a4ead0086f94cf4fe9d3f",
+      "RemoteSha": "6585bbccccd0fa82b18a4ead0086f94cf4fe9d3f"
+    },
+    "MetaboCoreUtils": {
+      "Package": "MetaboCoreUtils",
+      "Version": "1.16.1",
+      "Depends": "R (>= 4.0)",
+      "Imports": "utils, MsCoreUtils, BiocParallel, methods, stats",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "MsCoreUtils": {
+      "Package": "MsCoreUtils",
+      "Version": "1.20.0",
+      "Depends": "R (>= 3.6.0)",
+      "Imports": "methods, S4Vectors, MASS, stats, clue",
+      "LinkingTo": "Rcpp",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "MsExperiment": {
+      "Package": "MsExperiment",
+      "Version": "1.10.1",
+      "Depends": "R (>= 4.2), ProtGenerics (>= 1.35.2),",
+      "Imports": "methods, S4Vectors, IRanges, Spectra, SummarizedExperiment, QFeatures, DBI, BiocGenerics",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "MsFeatures": {
+      "Package": "MsFeatures",
+      "Version": "1.16.0",
+      "Depends": "R (>= 4.1)",
+      "Imports": "methods, ProtGenerics (>= 1.23.5), MsCoreUtils, SummarizedExperiment, stats",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "MultiAssayExperiment": {
+      "Package": "MultiAssayExperiment",
+      "Version": "1.34.0",
+      "Depends": "SummarizedExperiment (>= 1.3.81), R (>= 3.5.0)",
+      "Imports": "Biobase, BiocBaseUtils, BiocGenerics (>= 0.53.4), DelayedArray, GenomicRanges, IRanges, methods, S4Vectors, tidyr, utils",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "MultiDataSet": {
+      "Package": "MultiDataSet",
+      "Version": "1.38.0",
+      "Depends": "R (>= 4.1), Biobase",
+      "Imports": "BiocGenerics, GenomicRanges, IRanges, S4Vectors, SummarizedExperiment, methods, utils, ggplot2, ggrepel, qqman, limma",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "bioc",
+      "RemoteRepo": "MultiDataSet",
+      "RemoteSha": "65bb1204ac3628cfcc4470a614dade6a42e55f29",
+      "RemoteRef": "65bb1204ac3628cfcc4470a614dade6a42e55f29"
+    },
+    "PCAtools": {
+      "Package": "PCAtools",
+      "Version": "2.20.0",
+      "Depends": "ggplot2, ggrepel",
+      "Imports": "lattice, grDevices, cowplot, methods, reshape2, stats, Matrix, DelayedMatrixStats, DelayedArray, BiocSingular, BiocParallel, Rcpp, dqrng",
+      "LinkingTo": "Rcpp, beachmat, BH, dqrng",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "PMCMRplus": {
+      "Package": "PMCMRplus",
+      "Version": "1.9.12",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "mvtnorm (>= 1.0), multcompView, gmp, Rmpfr, SuppDists, kSamples (>= 1.2.7), BWStest (>= 0.2.1), MASS, stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "PSMatch": {
+      "Package": "PSMatch",
+      "Version": "1.12.0",
+      "Depends": "S4Vectors, R (>= 4.1.0)",
+      "Imports": "utils, stats, igraph, methods, Spectra (>= 1.17.10), Matrix, BiocParallel, BiocGenerics, ProtGenerics (>= 1.27.1), QFeatures, MsCoreUtils, IRanges",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "ProtGenerics": {
+      "Package": "ProtGenerics",
+      "Version": "1.40.0",
+      "Depends": "methods",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "QFeatures": {
+      "Package": "QFeatures",
+      "Version": "1.18.0",
+      "Depends": "R (>= 4.1.0), MultiAssayExperiment",
+      "Imports": "methods, stats, utils, S4Vectors, IRanges, SummarizedExperiment, BiocGenerics, ProtGenerics (>= 1.35.1), AnnotationFilter, lazyeval, Biobase, MsCoreUtils (>= 1.7.2), igraph, grDevices, plotly, tidyr, tidyselect, reshape2",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "R.methodsS3": {
+      "Package": "R.methodsS3",
+      "Version": "1.8.2",
+      "Depends": "R (>= 2.13.0)",
+      "Imports": "utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "R.oo": {
+      "Package": "R.oo",
+      "Version": "1.27.1",
+      "Depends": "R (>= 2.13.0), R.methodsS3 (>= 1.8.2)",
+      "Imports": "methods, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "R.utils": {
+      "Package": "R.utils",
+      "Version": "2.13.0",
+      "Depends": "R (>= 2.14.0), R.oo",
+      "Imports": "methods, utils, tools, R.methodsS3",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "R6": {
+      "Package": "R6",
+      "Version": "2.6.1",
+      "Depends": "R (>= 3.6)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "RColorBrewer": {
+      "Package": "RColorBrewer",
+      "Version": "1.1-3",
+      "Depends": "R (>= 2.0.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "RCurl": {
+      "Package": "RCurl",
+      "Version": "1.98-1.17",
+      "Depends": "R (>= 3.4.0), methods",
+      "Imports": "bitops",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "RSQLite": {
+      "Package": "RSQLite",
+      "Version": "2.4.3",
+      "Depends": "R (>= 3.1.0)",
+      "Imports": "bit64, blob (>= 1.2.0), DBI (>= 1.2.0), memoise, methods, pkgconfig, rlang",
+      "LinkingTo": "plogr (>= 0.2.0), cpp11 (>= 0.4.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "RSpectra": {
+      "Package": "RSpectra",
+      "Version": "0.16-2",
+      "Depends": "R (>= 3.0.2)",
+      "Imports": "Matrix (>= 1.1-0), Rcpp (>= 0.11.5)",
+      "LinkingTo": "Rcpp, RcppEigen (>= 0.3.3.3.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "Rcpp": {
+      "Package": "Rcpp",
+      "Version": "1.1.0",
+      "Imports": "methods, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "RcppArmadillo": {
+      "Package": "RcppArmadillo",
+      "Version": "14.6.3-1",
+      "Depends": "R (>= 3.3.0)",
+      "Imports": "Rcpp (>= 1.0.12), stats, utils, methods",
+      "LinkingTo": "Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "RcppEigen": {
+      "Package": "RcppEigen",
+      "Version": "0.3.4.0.2",
+      "Depends": "R (>= 3.6.0)",
+      "Imports": "Rcpp (>= 0.11.0), stats, utils",
+      "LinkingTo": "Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "RcppParallel": {
+      "Package": "RcppParallel",
+      "Version": "5.1.10",
+      "Depends": "R (>= 3.0.2)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "Rdisop": {
+      "Package": "Rdisop",
+      "Version": "1.68.0",
+      "Depends": "R (>= 2.10), Rcpp",
+      "LinkingTo": "Rcpp",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "Rdpack": {
+      "Package": "Rdpack",
+      "Version": "2.6.4",
+      "Depends": "R (>= 2.15.0), methods",
+      "Imports": "tools, utils, rbibutils (>= 1.3)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "Rhdf5lib": {
+      "Package": "Rhdf5lib",
+      "Version": "1.30.0",
+      "Depends": "R (>= 4.2.0)",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "Rmpfr": {
+      "Package": "Rmpfr",
+      "Version": "1.1-1",
+      "Depends": "gmp (>= 0.6-1), R (>= 3.6.0)",
+      "Imports": "stats, utils, methods",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "S4Arrays": {
+      "Package": "S4Arrays",
+      "Version": "1.8.1",
+      "Depends": "R (>= 4.3.0), methods, Matrix, abind, BiocGenerics (>= 0.45.2), S4Vectors, IRanges",
+      "Imports": "stats, crayon",
+      "LinkingTo": "S4Vectors",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "S4Vectors": {
+      "Package": "S4Vectors",
+      "Version": "0.48.0",
+      "Depends": "R (>= 4.0.0), methods, utils, stats, stats4, BiocGenerics (>= 0.53.2)",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "bioc",
+      "RemoteRepo": "S4Vectors",
+      "RemoteRef": "c4f37f052d7c4ee8ff0d62a6adec355129258263",
+      "RemoteSha": "c4f37f052d7c4ee8ff0d62a6adec355129258263"
+    },
+    "S7": {
+      "Package": "S7",
+      "Version": "0.2.0",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ScaledMatrix": {
+      "Package": "ScaledMatrix",
+      "Version": "1.16.0",
+      "Imports": "methods, Matrix, S4Vectors, DelayedArray",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "SparseArray": {
+      "Package": "SparseArray",
+      "Version": "1.8.1",
+      "Depends": "R (>= 4.3.0), methods, Matrix, BiocGenerics (>= 0.43.1), MatrixGenerics (>= 1.11.1), S4Vectors (>= 0.43.2), S4Arrays (>= 1.5.11)",
+      "Imports": "utils, stats, matrixStats, IRanges, XVector",
+      "LinkingTo": "S4Vectors, IRanges, XVector",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "SparseM": {
+      "Package": "SparseM",
+      "Version": "1.84-2",
+      "Depends": "R (>= 2.15), methods",
+      "Imports": "graphics, stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "Spectra": {
+      "Package": "Spectra",
+      "Version": "1.18.2",
+      "Depends": "R (>= 4.1.0), S4Vectors, BiocParallel",
+      "Imports": "ProtGenerics (>= 1.39.2), methods, IRanges, MsCoreUtils (>= 1.7.5), graphics, grDevices, stats, tools, utils, fs, BiocGenerics, MetaboCoreUtils",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "SummarizedExperiment": {
+      "Package": "SummarizedExperiment",
+      "Version": "1.38.1",
+      "Depends": "R (>= 4.0.0), methods, MatrixGenerics (>= 1.1.3), GenomicRanges (>= 1.55.2), Biobase",
+      "Imports": "utils, stats, tools, Matrix, BiocGenerics (>= 0.51.3), S4Vectors (>= 0.33.7), IRanges (>= 2.23.9), GenomeInfoDb (>= 1.13.1), S4Arrays (>= 1.1.1), DelayedArray (>= 0.31.12)",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "SuppDists": {
+      "Package": "SuppDists",
+      "Version": "1.1-9.9",
+      "Depends": "R (>= 3.3.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "UCSC.utils": {
+      "Package": "UCSC.utils",
+      "Version": "1.4.0",
+      "Imports": "methods, stats, httr, jsonlite, S4Vectors",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "WRS2": {
+      "Package": "WRS2",
+      "Version": "1.1-7",
+      "Depends": "R (>= 4.0.0)",
+      "Imports": "MASS, reshape, plyr, stats, graphics, grDevices, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "XML": {
+      "Package": "XML",
+      "Version": "3.99-0.19",
+      "Depends": "R (>= 4.0.0), methods, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "XVector": {
+      "Package": "XVector",
+      "Version": "0.48.0",
+      "Depends": "R (>= 4.0.0), methods, BiocGenerics (>= 0.37.0), S4Vectors (>= 0.27.12), IRanges (>= 2.23.9)",
+      "Imports": "methods, utils, tools, BiocGenerics, S4Vectors, IRanges",
+      "LinkingTo": "S4Vectors, IRanges",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "abind": {
+      "Package": "abind",
+      "Version": "1.4-8",
+      "Depends": "R (>= 1.5.0)",
+      "Imports": "methods, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "afex": {
+      "Package": "afex",
+      "Version": "1.4-1",
+      "Depends": "R (>= 3.5.0), lme4 (>= 1.1-8)",
+      "Imports": "pbkrtest (>= 0.4-1), lmerTest (>= 3.0-0), car, reshape2, stats, methods, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "affy": {
+      "Package": "affy",
+      "Version": "1.86.0",
+      "Depends": "R (>= 2.8.0), BiocGenerics (>= 0.1.12), Biobase (>= 2.5.5)",
+      "Imports": "affyio (>= 1.13.3), BiocManager, graphics, grDevices, methods, preprocessCore, stats, utils",
+      "LinkingTo": "preprocessCore",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "affyio": {
+      "Package": "affyio",
+      "Version": "1.78.0",
+      "Depends": "R (>= 2.6.0)",
+      "Imports": "methods",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "ape": {
+      "Package": "ape",
+      "Version": "5.8-1",
+      "Depends": "R (>= 3.2.0)",
+      "Imports": "nlme, lattice, graphics, methods, stats, utils, parallel, Rcpp (>= 0.12.0), digest",
+      "LinkingTo": "Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "aplot": {
+      "Package": "aplot",
+      "Version": "0.2.8",
+      "Depends": "R (>= 4.1.0)",
+      "Imports": "ggfun (>= 0.1.3), ggplot2, ggplotify, patchwork, magrittr, methods, utils, yulab.utils (>= 0.1.9), pillar",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "askpass": {
+      "Package": "askpass",
+      "Version": "1.2.1",
+      "Imports": "sys (>= 2.1)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "assorthead": {
+      "Package": "assorthead",
+      "Version": "1.2.0",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "attempt": {
+      "Package": "attempt",
+      "Version": "0.3.1",
+      "Imports": "rlang",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "backports": {
+      "Package": "backports",
+      "Version": "1.5.0",
+      "Depends": "R (>= 3.0.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "base64enc": {
+      "Package": "base64enc",
+      "Version": "0.1-3",
+      "Depends": "R (>= 2.9.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "bayestestR": {
+      "Package": "bayestestR",
+      "Version": "0.16.1",
+      "Depends": "R (>= 3.6)",
+      "Imports": "insight (>= 1.3.1), datawizard (>= 1.1.0), graphics, methods, stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "beachmat": {
+      "Package": "beachmat",
+      "Version": "2.24.0",
+      "Imports": "methods, DelayedArray (>= 0.27.2), SparseArray, BiocGenerics, Matrix, Rcpp",
+      "LinkingTo": "Rcpp, assorthead",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "bit": {
+      "Package": "bit",
+      "Version": "4.6.0",
+      "Depends": "R (>= 3.4.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "bit64": {
+      "Package": "bit64",
+      "Version": "4.6.0-1",
+      "Depends": "R (>= 3.4.0), bit (>= 4.0.0)",
+      "Imports": "graphics, methods, stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "bitops": {
+      "Package": "bitops",
+      "Version": "1.0-9",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "blob": {
+      "Package": "blob",
+      "Version": "1.2.4",
+      "Imports": "methods, rlang, vctrs (>= 0.2.1)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "boot": {
+      "Package": "boot",
+      "Version": "1.3-32",
+      "Depends": "R (>= 3.0.0), graphics, stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "broom": {
+      "Package": "broom",
+      "Version": "1.0.9",
+      "Depends": "R (>= 4.1)",
+      "Imports": "backports, cli, dplyr (>= 1.0.0), generics (>= 0.0.2), glue, lifecycle, purrr, rlang (>= 1.1.0), stringr, tibble (>= 3.0.0), tidyr (>= 1.0.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "bsicons": {
+      "Package": "bsicons",
+      "Version": "0.1.2",
+      "Depends": "R (>= 2.10)",
+      "Imports": "cli, htmltools, rlang, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "bslib": {
+      "Package": "bslib",
+      "Version": "0.9.0",
+      "Depends": "R (>= 2.10)",
+      "Imports": "base64enc, cachem, fastmap (>= 1.1.1), grDevices, htmltools (>= 0.5.8), jquerylib (>= 0.1.3), jsonlite, lifecycle, memoise (>= 2.0.1), mime, rlang, sass (>= 0.4.9)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "cachem": {
+      "Package": "cachem",
+      "Version": "1.1.0",
+      "Imports": "rlang, fastmap (>= 1.2.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "calibrate": {
+      "Package": "calibrate",
+      "Version": "1.7.7",
+      "Depends": "R (>= 3.5.0), MASS",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "callr": {
+      "Package": "callr",
+      "Version": "3.7.6",
+      "Depends": "R (>= 3.4)",
+      "Imports": "processx (>= 3.6.1), R6, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "car": {
+      "Package": "car",
+      "Version": "3.1-3",
+      "Depends": "R (>= 3.5.0), carData (>= 3.0-0)",
+      "Imports": "abind, Formula, MASS, mgcv, nnet, pbkrtest (>= 0.4-4), quantreg, grDevices, utils, stats, graphics, lme4 (>= 1.1-27.1), nlme, scales",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "carData": {
+      "Package": "carData",
+      "Version": "3.0-5",
+      "Depends": "R (>= 3.5.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "cellranger": {
+      "Package": "cellranger",
+      "Version": "1.1.0",
+      "Depends": "R (>= 3.0.0)",
+      "Imports": "rematch, tibble",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "checkmate": {
+      "Package": "checkmate",
+      "Version": "2.3.3",
+      "Depends": "R (>= 3.0.0)",
+      "Imports": "backports (>= 1.1.0), utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "circlize": {
+      "Package": "circlize",
+      "Version": "0.4.16",
+      "Depends": "R (>= 4.0.0), graphics",
+      "Imports": "GlobalOptions (>= 0.1.2), shape, grDevices, utils, stats, colorspace, methods, grid",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "class": {
+      "Package": "class",
+      "Version": "7.3-23",
+      "Depends": "R (>= 3.0.0), stats, utils",
+      "Imports": "MASS",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "cli": {
+      "Package": "cli",
+      "Version": "3.6.5",
+      "Depends": "R (>= 3.4)",
+      "Imports": "utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "clipr": {
+      "Package": "clipr",
+      "Version": "0.8.0",
+      "Imports": "utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "clue": {
+      "Package": "clue",
+      "Version": "0.3-66",
+      "Depends": "R (>= 3.2.0)",
+      "Imports": "stats, cluster, graphics, methods",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "cluster": {
+      "Package": "cluster",
+      "Version": "2.1.8.1",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "graphics, grDevices, stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "clusterProfiler": {
+      "Package": "clusterProfiler",
+      "Version": "4.16.0",
+      "Depends": "R (>= 4.2.0)",
+      "Imports": "AnnotationDbi, DOSE (>= 3.23.2), dplyr, enrichplot (>= 1.9.3), GO.db, GOSemSim (>= 2.27.2), gson (>= 0.0.7), httr, igraph, magrittr, methods, plyr, qvalue, rlang, stats, tidyr, utils, yulab.utils (>= 0.1.6)",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "coda": {
+      "Package": "coda",
+      "Version": "0.19-4.1",
+      "Depends": "R (>= 2.14.0)",
+      "Imports": "lattice",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "codetools": {
+      "Package": "codetools",
+      "Version": "0.2-20",
+      "Depends": "R (>= 2.1)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "colorspace": {
+      "Package": "colorspace",
+      "Version": "2.1-1",
+      "Depends": "R (>= 3.0.0), methods",
+      "Imports": "graphics, grDevices, stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "colourpicker": {
+      "Package": "colourpicker",
+      "Version": "1.3.0",
+      "Depends": "R (>= 3.1.0)",
+      "Imports": "ggplot2, htmltools, htmlwidgets (>= 0.7), jsonlite, miniUI (>= 0.1.1), shiny (>= 0.11.1), shinyjs (>= 2.0.0), utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "commonmark": {
+      "Package": "commonmark",
+      "Version": "2.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "config": {
+      "Package": "config",
+      "Version": "0.3.2",
+      "Imports": "yaml (>= 2.1.19)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "conflicted": {
+      "Package": "conflicted",
+      "Version": "1.2.0",
+      "Depends": "R (>= 3.2)",
+      "Imports": "cli (>= 3.4.0), memoise, rlang (>= 1.0.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "contfrac": {
+      "Package": "contfrac",
+      "Version": "1.1-12",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "corpcor": {
+      "Package": "corpcor",
+      "Version": "1.6.10",
+      "Depends": "R (>= 3.0.2)",
+      "Imports": "stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "correlation": {
+      "Package": "correlation",
+      "Version": "0.8.8",
+      "Depends": "R (>= 4.1)",
+      "Imports": "bayestestR (>= 0.16.0), datasets, datawizard (>= 1.1.0), insight (>= 1.3.1), parameters (>= 0.26.0), stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "corrplot": {
+      "Package": "corrplot",
+      "Version": "0.95",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "cowplot": {
+      "Package": "cowplot",
+      "Version": "1.2.0",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "ggplot2 (>= 3.5.2), grid, gtable, grDevices, methods, rlang, scales",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "cpp11": {
+      "Package": "cpp11",
+      "Version": "0.5.2",
+      "Depends": "R (>= 4.0.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "crayon": {
+      "Package": "crayon",
+      "Version": "1.5.3",
+      "Imports": "grDevices, methods, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "crosstalk": {
+      "Package": "crosstalk",
+      "Version": "1.2.1",
+      "Imports": "htmltools (>= 0.3.6), jsonlite, lazyeval, R6",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "curl": {
+      "Package": "curl",
+      "Version": "7.0.0",
+      "Depends": "R (>= 3.0.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "dashboardthemes": {
+      "Package": "dashboardthemes",
+      "Version": "1.1.6",
+      "Depends": "R (>= 3.2.3)",
+      "Imports": "htmltools (>= 0.3.5)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "data.table": {
+      "Package": "data.table",
+      "Version": "1.17.8",
+      "Depends": "R (>= 3.3.0)",
+      "Imports": "methods",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "datawizard": {
+      "Package": "datawizard",
+      "Version": "1.2.0",
+      "Depends": "R (>= 4.0)",
+      "Imports": "insight (>= 1.3.1), stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "dbplyr": {
+      "Package": "dbplyr",
+      "Version": "2.5.0",
+      "Depends": "R (>= 3.6)",
+      "Imports": "blob (>= 1.2.0), cli (>= 3.6.1), DBI (>= 1.1.3), dplyr (>= 1.1.2), glue (>= 1.6.2), lifecycle (>= 1.0.3), magrittr, methods, pillar (>= 1.9.0), purrr (>= 1.0.1), R6 (>= 2.2.2), rlang (>= 1.1.1), tibble (>= 3.2.1), tidyr (>= 1.3.0), tidyselect (>= 1.2.1), utils, vctrs (>= 0.6.3), withr (>= 2.5.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "deSolve": {
+      "Package": "deSolve",
+      "Version": "1.40",
+      "Depends": "R (>= 3.3.0)",
+      "Imports": "methods, graphics, grDevices, stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "desc": {
+      "Package": "desc",
+      "Version": "1.4.3",
+      "Depends": "R (>= 3.4)",
+      "Imports": "cli, R6, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "digest": {
+      "Package": "digest",
+      "Version": "0.6.37",
+      "Depends": "R (>= 3.3.0)",
+      "Imports": "utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "doBy": {
+      "Package": "doBy",
+      "Version": "4.7.0",
+      "Depends": "R (>= 4.2.0), methods",
+      "Imports": "boot, broom, cowplot, Deriv, dplyr, ggplot2, MASS, Matrix, modelr, microbenchmark, rlang, tibble, tidyr,",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "doParallel": {
+      "Package": "doParallel",
+      "Version": "1.0.17",
+      "Depends": "R (>= 2.14.0), foreach (>= 1.2.0), iterators (>= 1.0.0), parallel, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "doRNG": {
+      "Package": "doRNG",
+      "Version": "1.8.6.2",
+      "Depends": "R (>= 3.0.0), foreach, rngtools (>= 1.5)",
+      "Imports": "stats, utils, iterators",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "dplyr": {
+      "Package": "dplyr",
+      "Version": "1.1.4",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "cli (>= 3.4.0), generics, glue (>= 1.3.2), lifecycle (>= 1.0.3), magrittr (>= 1.5), methods, pillar (>= 1.9.0), R6, rlang (>= 1.1.0), tibble (>= 3.2.0), tidyselect (>= 1.2.0), utils, vctrs (>= 0.6.4)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "dqrng": {
+      "Package": "dqrng",
+      "Version": "0.4.1",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "Rcpp (>= 0.12.16)",
+      "LinkingTo": "Rcpp, BH (>= 1.64.0-1), sitmo (>= 2.0.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "dtplyr": {
+      "Package": "dtplyr",
+      "Version": "1.3.1",
+      "Depends": "R (>= 3.3)",
+      "Imports": "cli (>= 3.4.0), data.table (>= 1.13.0), dplyr (>= 1.1.0), glue, lifecycle, rlang (>= 1.0.4), tibble, tidyselect (>= 1.2.0), vctrs (>= 0.4.1)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "e1071": {
+      "Package": "e1071",
+      "Version": "1.7-16",
+      "Imports": "graphics, grDevices, class, stats, methods, utils, proxy",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "effectsize": {
+      "Package": "effectsize",
+      "Version": "1.0.1",
+      "Depends": "R (>= 4.0)",
+      "Imports": "bayestestR (>= 0.16.0), insight (>= 1.3.0), parameters (>= 0.26.0), performance (>= 0.14.0), datawizard (>= 1.1.0), stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ellipse": {
+      "Package": "ellipse",
+      "Version": "0.5.0",
+      "Depends": "R (>= 2.0.0),graphics,stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "elliptic": {
+      "Package": "elliptic",
+      "Version": "1.4-0",
+      "Depends": "R (>= 2.5.0)",
+      "Imports": "MASS",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "enrichplot": {
+      "Package": "enrichplot",
+      "Version": "1.28.4",
+      "Depends": "R (>= 4.1.0)",
+      "Imports": "aplot (>= 0.2.1), DOSE (>= 3.31.2), ggfun (>= 0.1.7), ggnewscale, ggplot2, ggrepel (>= 0.9.0), ggtangle (>= 0.0.5), graphics, grid, igraph, methods, plyr, purrr, RColorBrewer, reshape2, rlang, stats, utils, scatterpie, GOSemSim (>= 2.31.2), magrittr, ggtree, yulab.utils (>= 0.1.6)",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "evaluate": {
+      "Package": "evaluate",
+      "Version": "1.0.4",
+      "Depends": "R (>= 3.6.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "farver": {
+      "Package": "farver",
+      "Version": "2.1.2",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "fastDummies": {
+      "Package": "fastDummies",
+      "Version": "1.7.5",
+      "Depends": "R (>= 2.10)",
+      "Imports": "data.table, tibble, stringr",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "fastmap": {
+      "Package": "fastmap",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "fastmatch": {
+      "Package": "fastmatch",
+      "Version": "1.1-6",
+      "Depends": "R (>= 2.3.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "fgsea": {
+      "Package": "fgsea",
+      "Version": "1.34.2",
+      "Depends": "R (>= 4.1)",
+      "Imports": "Rcpp, data.table, BiocParallel, stats, ggplot2 (>= 2.2.0), cowplot, grid, fastmatch, Matrix, scales, utils",
+      "LinkingTo": "Rcpp, BH",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "fit.models": {
+      "Package": "fit.models",
+      "Version": "0.64",
+      "Imports": "lattice, stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "fontawesome": {
+      "Package": "fontawesome",
+      "Version": "0.5.3",
+      "Depends": "R (>= 3.3.0)",
+      "Imports": "rlang (>= 1.0.6), htmltools (>= 0.5.1.1)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "forcats": {
+      "Package": "forcats",
+      "Version": "1.0.0",
+      "Depends": "R (>= 3.4)",
+      "Imports": "cli (>= 3.4.0), glue, lifecycle, magrittr, rlang (>= 1.0.0), tibble",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "foreach": {
+      "Package": "foreach",
+      "Version": "1.5.2",
+      "Depends": "R (>= 2.5.0)",
+      "Imports": "codetools, utils, iterators",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "foreign": {
+      "Package": "foreign",
+      "Version": "0.8-90",
+      "Depends": "R (>= 4.0.0)",
+      "Imports": "methods, utils, stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "formatR": {
+      "Package": "formatR",
+      "Version": "1.14",
+      "Depends": "R (>= 3.2.3)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "fs": {
+      "Package": "fs",
+      "Version": "1.6.6",
+      "Depends": "R (>= 3.6)",
+      "Imports": "methods",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "furrr": {
+      "Package": "furrr",
+      "Version": "0.3.1",
+      "Depends": "future (>= 1.25.0), R (>= 3.4.0)",
+      "Imports": "globals (>= 0.14.0), lifecycle (>= 1.0.1), purrr (>= 0.3.4), rlang (>= 1.0.2), vctrs (>= 0.4.1)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "futile.logger": {
+      "Package": "futile.logger",
+      "Version": "1.4.3",
+      "Depends": "R (>= 3.0.0)",
+      "Imports": "utils, lambda.r (>= 1.1.0), futile.options",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "futile.options": {
+      "Package": "futile.options",
+      "Version": "1.0.1",
+      "Depends": "R (>= 2.8.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "future": {
+      "Package": "future",
+      "Version": "1.67.0",
+      "Depends": "R (>= 3.2.0)",
+      "Imports": "digest, globals (>= 0.18.0), listenv (>= 0.8.0), parallel, parallelly (>= 1.44.0), utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "gargle": {
+      "Package": "gargle",
+      "Version": "1.5.2",
+      "Depends": "R (>= 3.6)",
+      "Imports": "cli (>= 3.0.1), fs (>= 1.3.1), glue (>= 1.3.0), httr (>= 1.4.5), jsonlite, lifecycle, openssl, rappdirs, rlang (>= 1.1.0), stats, utils, withr",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "generics": {
+      "Package": "generics",
+      "Version": "0.1.4",
+      "Depends": "R (>= 3.6)",
+      "Imports": "methods",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggcorrplot": {
+      "Package": "ggcorrplot",
+      "Version": "0.1.4.1",
+      "Depends": "R (>= 3.3), ggplot2 (>= 3.3.6)",
+      "Imports": "reshape2, stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggforce": {
+      "Package": "ggforce",
+      "Version": "0.5.0.9000",
+      "Depends": "ggplot2 (>= 3.5.0), R (>= 3.3.0)",
+      "Imports": "grid, scales, MASS, tweenr (>= 0.1.5), gtable, rlang, polyclip, stats, grDevices, tidyselect, withr, utils, lifecycle, cli, vctrs, systemfonts",
+      "LinkingTo": "cpp11",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "ggforce",
+      "RemoteUsername": "thomasp85",
+      "RemoteRef": "96b8bbf695aed5758516463a1854b66a71f82a01",
+      "RemoteSha": "96b8bbf695aed5758516463a1854b66a71f82a01"
+    },
+    "ggfortify": {
+      "Package": "ggfortify",
+      "Version": "0.4.19",
+      "Depends": "methods, ggplot2 (>= 2.0.0)",
+      "Imports": "dplyr (>= 0.3), tidyr, gridExtra, grid, scales, stringr, tibble",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggfun": {
+      "Package": "ggfun",
+      "Version": "0.2.0",
+      "Depends": "R (>= 4.2.0)",
+      "Imports": "cli, dplyr, ggplot2, grid, rlang, scales, utils, yulab.utils (>= 0.1.6)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggnewscale": {
+      "Package": "ggnewscale",
+      "Version": "0.5.2",
+      "Imports": "ggplot2 (>= 3.5.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggplot2": {
+      "Package": "ggplot2",
+      "Version": "4.0.2",
+      "Depends": "R (>= 4.1)",
+      "Imports": "cli, grDevices, grid, gtable (>= 0.3.6), isoband, lifecycle (> 1.0.1), rlang (>= 1.1.0), S7, scales (>= 1.4.0), stats, vctrs (>= 0.6.0), withr (>= 2.5.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggplotify": {
+      "Package": "ggplotify",
+      "Version": "0.1.2",
+      "Depends": "R (>= 3.4.0)",
+      "Imports": "ggplot2, graphics, grDevices, grid, gridGraphics, yulab.utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggraph": {
+      "Package": "ggraph",
+      "Version": "2.2.1",
+      "Depends": "R (>= 2.10), ggplot2 (>= 3.5.0)",
+      "Imports": "dplyr, ggforce (>= 0.3.1), grid, igraph (>= 1.0.0), scales, MASS, ggrepel, utils, stats, viridis, rlang, tidygraph, graphlayouts (>= 1.1.0), withr, cli, vctrs, lifecycle, memoise",
+      "LinkingTo": "cpp11",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggrepel": {
+      "Package": "ggrepel",
+      "Version": "0.9.6",
+      "Depends": "R (>= 3.0.0), ggplot2 (>= 2.2.0)",
+      "Imports": "grid, Rcpp, rlang (>= 0.3.0), scales (>= 0.5.0), withr (>= 2.5.0)",
+      "LinkingTo": "Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggsci": {
+      "Package": "ggsci",
+      "Version": "3.2.0",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "ggplot2 (>= 2.0.0), grDevices, scales",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggside": {
+      "Package": "ggside",
+      "Version": "0.3.1",
+      "Depends": "ggplot2 (>= 3.5.0)",
+      "Imports": "grid, gtable, rlang, scales (>= 1.3.0), cli, glue, stats, tibble, vctrs",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggsignif": {
+      "Package": "ggsignif",
+      "Version": "0.6.4",
+      "Imports": "ggplot2 (>= 3.3.5)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggstatsplot": {
+      "Package": "ggstatsplot",
+      "Version": "0.13.1",
+      "Depends": "R (>= 4.3.0)",
+      "Imports": "correlation (>= 0.8.7), datawizard (>= 1.1.0), dplyr (>= 1.1.4), ggcorrplot (>= 0.1.4.1), ggplot2 (>= 3.5.2), ggrepel (>= 0.9.6), ggside (>= 0.3.1), ggsignif (>= 0.6.4), glue (>= 1.8.0), insight (>= 1.2.0), paletteer (>= 1.6.0), parameters (>= 0.25.0), patchwork (>= 1.3.0), performance (>= 0.13.0), purrr (>= 1.0.4), rlang (>= 1.1.6), statsExpressions (>= 1.7.0), tidyr (>= 1.3.1), utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggtangle": {
+      "Package": "ggtangle",
+      "Version": "0.0.7",
+      "Depends": "R (>= 4.1.0)",
+      "Imports": "ggfun (>= 0.1.7), ggplot2, ggrepel, igraph, rlang, yulab.utils (>= 0.1.7)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggtree": {
+      "Package": "ggtree",
+      "Version": "3.16.3",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "ape, aplot, dplyr, ggplot2 (> 3.3.6), grid, magrittr, methods, purrr, rlang, ggfun (>= 0.1.7), yulab.utils (>= 0.1.6), tidyr, tidytree (>= 0.4.5), treeio (>= 1.8.0), utils, scales, stats, cli",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "globals": {
+      "Package": "globals",
+      "Version": "0.18.0",
+      "Depends": "R (>= 3.1.2)",
+      "Imports": "codetools",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "glue": {
+      "Package": "glue",
+      "Version": "1.8.0",
+      "Depends": "R (>= 3.6)",
+      "Imports": "methods",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "gmp": {
+      "Package": "gmp",
+      "Version": "0.7-5",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "methods",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "golem": {
+      "Package": "golem",
+      "Version": "0.5.1",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "attempt (>= 0.3.0), config, here, htmltools, rlang (>= 1.0.0), shiny (>= 1.5.0), utils, yaml",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "googledrive": {
+      "Package": "googledrive",
+      "Version": "2.1.1",
+      "Depends": "R (>= 3.6)",
+      "Imports": "cli (>= 3.0.0), gargle (>= 1.5.0), glue (>= 1.4.2), httr, jsonlite, lifecycle, magrittr, pillar (>= 1.9.0), purrr (>= 1.0.1), rlang (>= 1.0.2), tibble (>= 2.0.0), utils, uuid, vctrs (>= 0.3.0), withr",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "googlesheets4": {
+      "Package": "googlesheets4",
+      "Version": "1.1.1",
+      "Depends": "R (>= 3.6)",
+      "Imports": "cellranger, cli (>= 3.0.0), curl, gargle (>= 1.5.0), glue (>= 1.3.0), googledrive (>= 2.1.0), httr, ids, lifecycle, magrittr, methods, purrr, rematch2, rlang (>= 1.0.2), tibble (>= 2.1.1), utils, vctrs (>= 0.2.3), withr",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "graphlayouts": {
+      "Package": "graphlayouts",
+      "Version": "1.2.2",
+      "Depends": "R (>= 3.6.0)",
+      "Imports": "igraph (>= 2.0.0), Rcpp",
+      "LinkingTo": "Rcpp, RcppArmadillo",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "gridExtra": {
+      "Package": "gridExtra",
+      "Version": "2.3",
+      "Imports": "gtable, grid, grDevices, graphics, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "gridGraphics": {
+      "Package": "gridGraphics",
+      "Version": "0.5-1",
+      "Depends": "grid, graphics",
+      "Imports": "grDevices",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "gsignal": {
+      "Package": "gsignal",
+      "Version": "0.3-7",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "pracma, Rcpp, grDevices",
+      "LinkingTo": "Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "gson": {
+      "Package": "gson",
+      "Version": "0.1.0",
+      "Imports": "jsonlite, methods, rlang, stats, tidyr, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "gtable": {
+      "Package": "gtable",
+      "Version": "0.3.6",
+      "Depends": "R (>= 4.0)",
+      "Imports": "cli, glue, grid, lifecycle, rlang (>= 1.1.0), stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "haven": {
+      "Package": "haven",
+      "Version": "2.5.5",
+      "Depends": "R (>= 3.6)",
+      "Imports": "cli (>= 3.0.0), forcats (>= 0.2.0), hms, lifecycle, methods, readr (>= 0.1.0), rlang (>= 0.4.0), tibble, tidyselect, vctrs (>= 0.3.0)",
+      "LinkingTo": "cpp11",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "here": {
+      "Package": "here",
+      "Version": "1.0.1",
+      "Imports": "rprojroot (>= 2.0.2)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "highr": {
+      "Package": "highr",
+      "Version": "0.11",
+      "Depends": "R (>= 3.3.0)",
+      "Imports": "xfun (>= 0.18)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "hms": {
+      "Package": "hms",
+      "Version": "1.1.3",
+      "Imports": "lifecycle, methods, pkgconfig, rlang (>= 1.0.2), vctrs (>= 0.3.8)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "htmlTable": {
+      "Package": "htmlTable",
+      "Version": "2.4.3",
+      "Depends": "R (>= 4.1)",
+      "Imports": "stringr, knitr (>= 1.6), magrittr (>= 1.5), methods, checkmate, htmlwidgets, htmltools, rstudioapi (>= 0.6)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "htmltools": {
+      "Package": "htmltools",
+      "Version": "0.5.8.1",
+      "Depends": "R (>= 2.14.1)",
+      "Imports": "base64enc, digest, fastmap (>= 1.1.0), grDevices, rlang (>= 1.0.0), utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "htmlwidgets": {
+      "Package": "htmlwidgets",
+      "Version": "1.6.4",
+      "Imports": "grDevices, htmltools (>= 0.5.7), jsonlite (>= 0.9.16), knitr (>= 1.8), rmarkdown, yaml",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "httpuv": {
+      "Package": "httpuv",
+      "Version": "1.6.16",
+      "Depends": "R (>= 2.15.1)",
+      "Imports": "later (>= 0.8.0), promises, R6, Rcpp (>= 1.0.7), utils",
+      "LinkingTo": "later, Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "httr": {
+      "Package": "httr",
+      "Version": "1.4.7",
+      "Depends": "R (>= 3.5)",
+      "Imports": "curl (>= 5.0.2), jsonlite, mime, openssl (>= 0.8), R6",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "httr2": {
+      "Package": "httr2",
+      "Version": "1.2.1",
+      "Depends": "R (>= 4.1)",
+      "Imports": "cli (>= 3.0.0), curl (>= 6.4.0), glue, lifecycle, magrittr, openssl, R6, rappdirs, rlang (>= 1.1.0), vctrs (>= 0.6.3), withr",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "hypergeo": {
+      "Package": "hypergeo",
+      "Version": "1.2-14",
+      "Depends": "R (>= 3.1.0),",
+      "Imports": "elliptic (>= 1.3-5), contfrac (>= 1.1-9), deSolve",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ids": {
+      "Package": "ids",
+      "Version": "1.0.1",
+      "Imports": "openssl, uuid",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "igraph": {
+      "Package": "igraph",
+      "Version": "2.1.4",
+      "Depends": "methods, R (>= 3.5.0)",
+      "Imports": "cli, graphics, grDevices, lifecycle, magrittr, Matrix, pkgconfig (>= 2.0.0), rlang, stats, utils, vctrs",
+      "LinkingTo": "cpp11 (>= 0.5.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "impute": {
+      "Package": "impute",
+      "Version": "1.82.0",
+      "Depends": "R (>= 2.10)",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "insight": {
+      "Package": "insight",
+      "Version": "1.4.0",
+      "Depends": "R (>= 3.6)",
+      "Imports": "methods, stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "irlba": {
+      "Package": "irlba",
+      "Version": "2.3.5.1",
+      "Depends": "R (>= 3.6.2), Matrix",
+      "Imports": "stats, methods",
+      "LinkingTo": "Matrix",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "isoband": {
+      "Package": "isoband",
+      "Version": "0.2.7",
+      "Imports": "grid, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "iterators": {
+      "Package": "iterators",
+      "Version": "1.0.14",
+      "Depends": "R (>= 2.5.0), utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "itertools": {
+      "Package": "itertools",
+      "Version": "0.1-3",
+      "Depends": "R (>= 2.14.0), iterators(>= 1.0.0)",
+      "Imports": "parallel",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "jquerylib": {
+      "Package": "jquerylib",
+      "Version": "0.1.4",
+      "Imports": "htmltools",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "jsonlite": {
+      "Package": "jsonlite",
+      "Version": "2.0.0",
+      "Depends": "methods",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "kSamples": {
+      "Package": "kSamples",
+      "Version": "1.2-10",
+      "Depends": "SuppDists",
+      "Imports": "methods, graphics, stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "knitr": {
+      "Package": "knitr",
+      "Version": "1.50",
+      "Depends": "R (>= 3.6.0)",
+      "Imports": "evaluate (>= 0.15), highr (>= 0.11), methods, tools, xfun (>= 0.51), yaml (>= 2.1.19)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "labeling": {
+      "Package": "labeling",
+      "Version": "0.4.3",
+      "Imports": "stats, graphics",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "lambda.r": {
+      "Package": "lambda.r",
+      "Version": "1.2.4",
+      "Depends": "R (>= 3.0.0)",
+      "Imports": "formatR",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "later": {
+      "Package": "later",
+      "Version": "1.4.3",
+      "Imports": "Rcpp (>= 0.12.9), rlang",
+      "LinkingTo": "Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "lattice": {
+      "Package": "lattice",
+      "Version": "0.22-7",
+      "Depends": "R (>= 4.0.0)",
+      "Imports": "grid, grDevices, graphics, stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "lazyeval": {
+      "Package": "lazyeval",
+      "Version": "0.2.2",
+      "Depends": "R (>= 3.1.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "lifecycle": {
+      "Package": "lifecycle",
+      "Version": "1.0.4",
+      "Depends": "R (>= 3.6)",
+      "Imports": "cli (>= 3.4.0), glue, rlang (>= 1.1.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "limma": {
+      "Package": "limma",
+      "Version": "3.64.3",
+      "Depends": "R (>= 3.6.0)",
+      "Imports": "grDevices, graphics, stats, utils, methods, statmod",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "lipidflow": {
+      "Package": "lipidflow",
+      "Version": "0.0.1",
+      "Imports": "crayon, dplyr, ggplot2, grDevices, lifecycle, magrittr, MSnbase, openxlsx, pbapply, plyr, Rdisop, readr, readxl, stats, stringr, tibble, tidyr, utils, xcms, ProtGenerics, plotly, purrr, sxtTools (>= 0.99.1), cli, ggrepel, ggsci, htmlwidgets, impute, rstudioapi, methods",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "jaspershen-lab",
+      "RemoteRepo": "lipidflow",
+      "RemoteSha": "7a44a1f341973de2db81af6c9c191bf40e30a13e",
+      "RemoteRef": "7a44a1f341973de2db81af6c9c191bf40e30a13e"
+    },
+    "listenv": {
+      "Package": "listenv",
+      "Version": "0.9.1",
+      "Depends": "R (>= 3.1.2)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "lme4": {
+      "Package": "lme4",
+      "Version": "1.1-37",
+      "Depends": "R (>= 3.6.0), Matrix, methods, stats",
+      "Imports": "graphics, grid, splines, utils, parallel, MASS, lattice, boot, nlme (>= 3.1-123), minqa (>= 1.1.15), nloptr (>= 1.0.4), reformulas (>= 0.3.0)",
+      "LinkingTo": "Rcpp (>= 0.10.5), RcppEigen (>= 0.3.3.9.4), Matrix (>= 1.2-3)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "lmerTest": {
+      "Package": "lmerTest",
+      "Version": "3.1-3",
+      "Depends": "R (>= 3.2.5), lme4 (>= 1.1-10), stats, methods",
+      "Imports": "numDeriv, MASS, ggplot2",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "lubridate": {
+      "Package": "lubridate",
+      "Version": "1.9.4",
+      "Depends": "methods, R (>= 3.2)",
+      "Imports": "generics, timechange (>= 0.3.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "magrittr": {
+      "Package": "magrittr",
+      "Version": "2.0.3",
+      "Depends": "R (>= 3.4.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "masscleaner": {
+      "Package": "masscleaner",
+      "Version": "1.0.12",
+      "Depends": "R (>= 4.1)",
+      "Imports": "BiocParallel, cli, crayon, dplyr, ggplot2, graphics, grDevices, pcaMethods, impute, missForest, magrittr, purrr, e1071, methods, utils, stats, tibble, masstools, rstudioapi, robust, massdataset",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "tidymass",
+      "RemoteRepo": "masscleaner",
+      "RemoteRef": "e0979ec8bcc5c519c4d2160d7d9e93d5ea7d6274",
+      "RemoteSha": "e0979ec8bcc5c519c4d2160d7d9e93d5ea7d6274"
+    },
+    "massdataset": {
+      "Package": "massdataset",
+      "Version": "0.99.3",
+      "Depends": "R (>= 4.1)",
+      "Imports": "dplyr, magrittr, tibble, stringr, rstudioapi, ggplot2, methods, openxlsx, crayon, cli, purrr, pbapply, readr, rlang, ComplexHeatmap, grid, stats, utils, tidyselect (>= 1.1.2), vctrs, tidyr, SummarizedExperiment, S4Vectors",
+      "Source": "GitLab",
+      "RemoteType": "gitlab",
+      "RemoteUrl": "https://gitlab.com/tidymass/massdataset.git",
+      "RemotePkgRef": "gitlab::tidymass/massdataset",
+      "RemoteRef": "24c895abe9cd3ff422aaa620fb73335582efdd70",
+      "RemoteSha": "24c895abe9cd3ff422aaa620fb73335582efdd70",
+      "RemoteHost": "gitlab.com",
+      "RemoteRepo": "massdataset",
+      "RemoteUsername": "tidymass"
+    },
+    "massprocesser": {
+      "Package": "massprocesser",
+      "Version": "1.0.10",
+      "Depends": "R (>= 4.1)",
+      "Imports": "BiocParallel, cli, crayon, dplyr, ggplot2, magrittr, plyr, purrr, methods, MSnbase, utils, stats, readr, stringr, xcms, mzR, masstools, rstudioapi, massdataset, S4Vectors",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "tidymass",
+      "RemoteRepo": "massprocesser",
+      "RemoteRef": "edb9a9bf077947f13ad3c21279096204d1b8dd09",
+      "RemoteSha": "edb9a9bf077947f13ad3c21279096204d1b8dd09"
+    },
+    "massqc": {
+      "Package": "massqc",
+      "Version": "1.0.6",
+      "Depends": "R (>= 4.1)",
+      "Imports": "cli, crayon, dplyr, ggplot2, ggfortify, grDevices, magrittr, purrr, patchwork, utils, stats, tibble, tidyr, masstools, massdataset, rstudioapi, ggrepel, ggcorrplot, methods",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "tidymass",
+      "RemoteRepo": "massqc",
+      "RemoteRef": "4bc57d19133aa17ddc3df2df05442a348a53f6a7",
+      "RemoteSha": "4bc57d19133aa17ddc3df2df05442a348a53f6a7"
+    },
+    "massstat": {
+      "Package": "massstat",
+      "Version": "1.0.5",
+      "Depends": "R (>= 4.1)",
+      "Imports": "BiocParallel, cli, crayon, dplyr, ggplot2, ggfortify, graphics, grDevices, magrittr, plyr, purrr, methods, utils, stats, stringr, tibble, tidyr, massdataset, mixOmics, fastDummies, ComplexHeatmap, Hmisc, grid",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "tidymass",
+      "RemoteRepo": "massstat",
+      "RemoteRef": "0fe90d7a853f8181cdcdb4ea19ca6d1a34a460f2",
+      "RemoteSha": "0fe90d7a853f8181cdcdb4ea19ca6d1a34a460f2"
+    },
+    "masstools": {
+      "Package": "masstools",
+      "Version": "0.99.1",
+      "Depends": "R (>= 4.5)",
+      "Imports": "dplyr, jsonlite, magrittr, tibble, tidyr, stringr, methods, crayon, cli, purrr, pbapply, httr, rvest, xml2, stats, utils, ProtGenerics, lifecycle, ggplot2, Spectra, S4Vectors",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "masstools",
+      "RemoteUsername": "tidymass",
+      "RemoteRef": "c2187fffb4ed87f34452f2b20e2c2d4f98d9adfe",
+      "RemoteSha": "c2187fffb4ed87f34452f2b20e2c2d4f98d9adfe"
+    },
+    "matrixStats": {
+      "Package": "matrixStats",
+      "Version": "1.5.0",
+      "Depends": "R (>= 3.4.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "memoise": {
+      "Package": "memoise",
+      "Version": "2.0.1",
+      "Imports": "rlang (>= 0.4.10), cachem",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "metid": {
+      "Package": "metid",
+      "Version": "1.3.2",
+      "Depends": "R (>= 4.1)",
+      "Imports": "BiocParallel, crayon, dplyr, future, furrr, tidyr, ggplot2, pbapply, grDevices, utils, stats, readr, stringr, tibble, magrittr, masstools, purrr, plyr, MSnbase, cli, rstudioapi, rlang, massdataset, ggraph, igraph, tidygraph, methods, progress",
+      "Source": "GitLab",
+      "RemoteType": "gitlab",
+      "RemoteUrl": "https://gitlab.com/tidymass/metid.git",
+      "RemotePkgRef": "gitlab::tidymass/metid",
+      "RemoteRef": "fcc5993c9d777ecf8d6b147ecda4412cf11f4b4d",
+      "RemoteSha": "fcc5993c9d777ecf8d6b147ecda4412cf11f4b4d",
+      "RemoteHost": "gitlab.com",
+      "RemoteRepo": "metid",
+      "RemoteUsername": "tidymass"
+    },
+    "metpath": {
+      "Package": "metpath",
+      "Version": "1.0.10",
+      "Depends": "R (>= 4.1)",
+      "Imports": "cli, crayon, dplyr, ggplot2, grDevices, magrittr, pbapply, plyr, purrr, methods, utils, stats, stringr, KEGGREST, metid, future, furrr, openxlsx, rstudioapi, ggraph, ggrepel, tidygraph, rlang, massdataset, Rdisop, masstools, patchwork, BiocParallel, igraph, ggsci, MASS",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "metpath",
+      "RemoteUsername": "tidymass",
+      "RemoteRef": "f48a36411ded0839c36f4cdd5d331476f1cbf977",
+      "RemoteSha": "f48a36411ded0839c36f4cdd5d331476f1cbf977"
+    },
+    "mgcv": {
+      "Package": "mgcv",
+      "Version": "1.9-3",
+      "Depends": "R (>= 3.6.0), nlme (>= 3.1-64)",
+      "Imports": "methods, stats, graphics, Matrix, splines, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "microbenchmark": {
+      "Package": "microbenchmark",
+      "Version": "1.5.0",
+      "Depends": "R (>= 3.2.0)",
+      "Imports": "graphics, stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "mime": {
+      "Package": "mime",
+      "Version": "0.13",
+      "Imports": "tools",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "miniUI": {
+      "Package": "miniUI",
+      "Version": "0.1.2",
+      "Imports": "shiny (>= 0.13), htmltools (>= 0.3), utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "minqa": {
+      "Package": "minqa",
+      "Version": "1.2.8",
+      "Imports": "Rcpp (>= 0.9.10)",
+      "LinkingTo": "Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "missForest": {
+      "Package": "missForest",
+      "Version": "1.5",
+      "Imports": "randomForest,foreach,itertools,iterators,doRNG",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "mixOmics": {
+      "Package": "mixOmics",
+      "Version": "6.32.0",
+      "Depends": "R (>= 4.4.0), MASS, lattice, ggplot2",
+      "Imports": "igraph, ellipse, corpcor, RColorBrewer, parallel, dplyr, tidyr, reshape2, methods, matrixStats, rARPACK, gridExtra, grDevices, graphics, stats, ggrepel, BiocParallel, utils, gsignal, rgl",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "modelr": {
+      "Package": "modelr",
+      "Version": "0.1.11",
+      "Depends": "R (>= 3.2)",
+      "Imports": "broom, magrittr, purrr (>= 0.2.2), rlang (>= 1.0.6), tibble, tidyr (>= 0.8.0), tidyselect, vctrs",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "multcompView": {
+      "Package": "multcompView",
+      "Version": "0.1-10",
+      "Imports": "grid",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "mvtnorm": {
+      "Package": "mvtnorm",
+      "Version": "1.3-3",
+      "Depends": "R(>= 3.5.0)",
+      "Imports": "stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "mzID": {
+      "Package": "mzID",
+      "Version": "1.46.0",
+      "Depends": "methods",
+      "Imports": "XML, plyr, parallel, doParallel, foreach, iterators, ProtGenerics",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "mzR": {
+      "Package": "mzR",
+      "Version": "2.42.0",
+      "Depends": "R (>= 4.0.0), Rcpp (>= 0.10.1), methods, utils",
+      "Imports": "Biobase, BiocGenerics (>= 0.13.6), ProtGenerics (>= 1.17.3), ncdf4",
+      "LinkingTo": "Rcpp, Rhdf5lib (>= 1.1.4)",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "ncdf4": {
+      "Package": "ncdf4",
+      "Version": "1.24",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "nlme": {
+      "Package": "nlme",
+      "Version": "3.1-168",
+      "Depends": "R (>= 3.6.0)",
+      "Imports": "graphics, stats, utils, lattice",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "nloptr": {
+      "Package": "nloptr",
+      "Version": "2.2.1",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "nnet": {
+      "Package": "nnet",
+      "Version": "7.3-20",
+      "Depends": "R (>= 3.0.0), stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "numDeriv": {
+      "Package": "numDeriv",
+      "Version": "2016.8-1.1",
+      "Depends": "R (>= 2.11.1)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "openssl": {
+      "Package": "openssl",
+      "Version": "2.3.3",
+      "Imports": "askpass",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "openxlsx": {
+      "Package": "openxlsx",
+      "Version": "4.2.8",
+      "Depends": "R (>= 3.3.0)",
+      "Imports": "grDevices, methods, Rcpp, stats, stringi, utils, zip",
+      "LinkingTo": "Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "paletteer": {
+      "Package": "paletteer",
+      "Version": "1.6.0",
+      "Depends": "R (>= 2.10)",
+      "Imports": "prismatic, rematch2, rlang, rstudioapi",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "parallelly": {
+      "Package": "parallelly",
+      "Version": "1.45.1",
+      "Imports": "parallel, tools, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "parameters": {
+      "Package": "parameters",
+      "Version": "0.28.0",
+      "Depends": "R (>= 3.6)",
+      "Imports": "bayestestR (>= 0.16.1), datawizard (>= 1.2.0), insight (>= 1.3.1), graphics, methods, stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "patchwork": {
+      "Package": "patchwork",
+      "Version": "1.3.1",
+      "Imports": "ggplot2 (>= 3.0.0), gtable (>= 0.3.6), grid, stats, grDevices, utils, graphics, rlang (>= 1.0.0), cli, farver",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "pbapply": {
+      "Package": "pbapply",
+      "Version": "1.7-4",
+      "Depends": "R (>= 3.2.0)",
+      "Imports": "parallel",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "pbkrtest": {
+      "Package": "pbkrtest",
+      "Version": "0.5.5",
+      "Depends": "R (>= 4.2.0), lme4 (>= 1.1.31)",
+      "Imports": "broom, dplyr, MASS, methods, numDeriv, Matrix (>= 1.2.3), doBy (>= 4.6.22)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "pcaMethods": {
+      "Package": "pcaMethods",
+      "Version": "2.0.0",
+      "Depends": "Biobase, methods",
+      "Imports": "BiocGenerics, Rcpp (>= 0.11.3), MASS",
+      "LinkingTo": "Rcpp",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "pcaPP": {
+      "Package": "pcaPP",
+      "Version": "2.0-5",
+      "Depends": "R(>= 3.6.2)",
+      "Imports": "mvtnorm, methods",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "performance": {
+      "Package": "performance",
+      "Version": "0.15.0",
+      "Depends": "R (>= 4.0)",
+      "Imports": "bayestestR (>= 0.16.0), insight (>= 1.3.1), datawizard (>= 1.1.0), stats, methods, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "pillar": {
+      "Package": "pillar",
+      "Version": "1.11.0",
+      "Imports": "cli (>= 2.3.0), glue, lifecycle, rlang (>= 1.0.2), utf8 (>= 1.1.0), utils, vctrs (>= 0.5.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "pkgconfig": {
+      "Package": "pkgconfig",
+      "Version": "2.0.3",
+      "Imports": "utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "plogr": {
+      "Package": "plogr",
+      "Version": "0.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "plotly": {
+      "Package": "plotly",
+      "Version": "4.11.0",
+      "Depends": "R (>= 3.2.0), ggplot2 (>= 3.0.0)",
+      "Imports": "tools, scales, httr (>= 1.3.0), jsonlite (>= 1.6), magrittr, digest, viridisLite, base64enc, htmltools (>= 0.3.6), htmlwidgets (>= 1.5.2.9001), tidyr (>= 1.0.0), RColorBrewer, dplyr, vctrs, tibble, lazyeval (>= 0.2.0), rlang (>= 1.0.0), crosstalk, purrr, data.table, promises",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "plyr": {
+      "Package": "plyr",
+      "Version": "1.8.9",
+      "Depends": "R (>= 3.1.0)",
+      "Imports": "Rcpp (>= 0.11.0)",
+      "LinkingTo": "Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "png": {
+      "Package": "png",
+      "Version": "0.1-8",
+      "Depends": "R (>= 2.9.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "polyclip": {
+      "Package": "polyclip",
+      "Version": "1.10-7",
+      "Depends": "R (>= 3.5.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "pracma": {
+      "Package": "pracma",
+      "Version": "2.4.4",
+      "Depends": "R (>= 3.1.0)",
+      "Imports": "graphics, grDevices, stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "preprocessCore": {
+      "Package": "preprocessCore",
+      "Version": "1.70.0",
+      "Imports": "stats",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "prettyunits": {
+      "Package": "prettyunits",
+      "Version": "1.2.0",
+      "Depends": "R(>= 2.10)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "prismatic": {
+      "Package": "prismatic",
+      "Version": "1.1.2",
+      "Depends": "R (>= 3.2)",
+      "Imports": "graphics, farver (>= 2.0.1), grDevices",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "processx": {
+      "Package": "processx",
+      "Version": "3.8.6",
+      "Depends": "R (>= 3.4.0)",
+      "Imports": "ps (>= 1.2.0), R6, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "progress": {
+      "Package": "progress",
+      "Version": "1.2.3",
+      "Depends": "R (>= 3.6)",
+      "Imports": "crayon, hms, prettyunits, R6",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "progressr": {
+      "Package": "progressr",
+      "Version": "0.15.1",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "digest, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "promises": {
+      "Package": "promises",
+      "Version": "1.3.3",
+      "Imports": "fastmap (>= 1.1.0), later, magrittr (>= 1.5), R6, Rcpp, rlang, stats",
+      "LinkingTo": "later, Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "proxy": {
+      "Package": "proxy",
+      "Version": "0.4-27",
+      "Depends": "R (>= 3.4.0)",
+      "Imports": "stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ps": {
+      "Package": "ps",
+      "Version": "1.9.1",
+      "Depends": "R (>= 3.4)",
+      "Imports": "utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "purrr": {
+      "Package": "purrr",
+      "Version": "1.1.0",
+      "Depends": "R (>= 4.1)",
+      "Imports": "cli (>= 3.6.1), lifecycle (>= 1.0.3), magrittr (>= 1.5.0), rlang (>= 1.1.1), vctrs (>= 0.6.3)",
+      "LinkingTo": "cli",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "qqman": {
+      "Package": "qqman",
+      "Version": "0.1.9",
+      "Depends": "R (>= 3.0.0),",
+      "Imports": "calibrate",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "quantreg": {
+      "Package": "quantreg",
+      "Version": "6.1",
+      "Depends": "R (>= 3.5), stats, SparseM",
+      "Imports": "methods, graphics, Matrix, MatrixModels, survival, MASS",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "qvalue": {
+      "Package": "qvalue",
+      "Version": "2.40.0",
+      "Depends": "R(>= 2.10)",
+      "Imports": "splines, ggplot2, grid, reshape2",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "rARPACK": {
+      "Package": "rARPACK",
+      "Version": "0.11-0",
+      "Imports": "RSpectra",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ragg": {
+      "Package": "ragg",
+      "Version": "1.4.0",
+      "Imports": "systemfonts (>= 1.0.3), textshaping (>= 0.3.0)",
+      "LinkingTo": "systemfonts, textshaping",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "randomForest": {
+      "Package": "randomForest",
+      "Version": "4.7-1.2",
+      "Depends": "R (>= 4.1.0), stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rappdirs": {
+      "Package": "rappdirs",
+      "Version": "0.3.3",
+      "Depends": "R (>= 3.2)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rbibutils": {
+      "Package": "rbibutils",
+      "Version": "2.3",
+      "Depends": "R (>= 2.10)",
+      "Imports": "utils, tools",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "readr": {
+      "Package": "readr",
+      "Version": "2.1.5",
+      "Depends": "R (>= 3.6)",
+      "Imports": "cli (>= 3.2.0), clipr, crayon, hms (>= 0.4.1), lifecycle (>= 0.2.0), methods, R6, rlang, tibble, utils, vroom (>= 1.6.0)",
+      "LinkingTo": "cpp11, tzdb (>= 0.1.1)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "readxl": {
+      "Package": "readxl",
+      "Version": "1.4.5",
+      "Depends": "R (>= 3.6)",
+      "Imports": "cellranger, tibble (>= 2.0.1), utils",
+      "LinkingTo": "cpp11 (>= 0.4.0), progress",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "reformulas": {
+      "Package": "reformulas",
+      "Version": "0.4.1",
+      "Imports": "stats, methods, Matrix, Rdpack",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rematch": {
+      "Package": "rematch",
+      "Version": "2.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rematch2": {
+      "Package": "rematch2",
+      "Version": "2.1.2",
+      "Imports": "tibble",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "remotes": {
+      "Package": "remotes",
+      "Version": "2.5.0",
+      "Depends": "R (>= 3.0.0)",
+      "Imports": "methods, stats, tools, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "reprex": {
+      "Package": "reprex",
+      "Version": "2.1.1",
+      "Depends": "R (>= 3.6)",
+      "Imports": "callr (>= 3.6.0), cli (>= 3.2.0), clipr (>= 0.4.0), fs, glue, knitr (>= 1.23), lifecycle, rlang (>= 1.0.0), rmarkdown, rstudioapi, utils, withr (>= 2.3.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "reshape": {
+      "Package": "reshape",
+      "Version": "0.8.10",
+      "Depends": "R (>= 2.6.1)",
+      "Imports": "plyr",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "reshape2": {
+      "Package": "reshape2",
+      "Version": "1.4.4",
+      "Depends": "R (>= 3.1)",
+      "Imports": "plyr (>= 1.8.1), Rcpp, stringr",
+      "LinkingTo": "Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rgl": {
+      "Package": "rgl",
+      "Version": "1.3.24",
+      "Depends": "R (>= 3.6.0)",
+      "Imports": "graphics, grDevices, stats, utils, htmlwidgets (>= 1.6.0), htmltools, knitr (>= 1.33), jsonlite (>= 0.9.20), magrittr, R6, base64enc, mime",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rjson": {
+      "Package": "rjson",
+      "Version": "0.2.23",
+      "Depends": "R (>= 4.0.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rlang": {
+      "Package": "rlang",
+      "Version": "1.1.6",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rmarkdown": {
+      "Package": "rmarkdown",
+      "Version": "2.29",
+      "Depends": "R (>= 3.0)",
+      "Imports": "bslib (>= 0.2.5.1), evaluate (>= 0.13), fontawesome (>= 0.5.0), htmltools (>= 0.5.1), jquerylib, jsonlite, knitr (>= 1.43), methods, tinytex (>= 0.31), tools, utils, xfun (>= 0.36), yaml (>= 2.1.19)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rngtools": {
+      "Package": "rngtools",
+      "Version": "1.5.2",
+      "Depends": "R (>= 3.2.0), methods",
+      "Imports": "digest, utils, stats, parallel",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "robust": {
+      "Package": "robust",
+      "Version": "0.7-5",
+      "Depends": "fit.models",
+      "Imports": "graphics, stats, utils, lattice, MASS, robustbase, rrcov",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "robustbase": {
+      "Package": "robustbase",
+      "Version": "0.99-4-1",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "stats, graphics, utils, methods, DEoptimR",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ropls": {
+      "Package": "ropls",
+      "Version": "1.42.0",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "Biobase, ggplot2, graphics, grDevices, methods, plotly, stats, MultiAssayExperiment, MultiDataSet, SummarizedExperiment, utils",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "bioc",
+      "RemoteRepo": "ropls",
+      "RemoteSha": "7e60063007aee3f67b380edd57461a7cae68b342",
+      "RemoteRef": "7e60063007aee3f67b380edd57461a7cae68b342"
+    },
+    "rpart": {
+      "Package": "rpart",
+      "Version": "4.1.24",
+      "Depends": "R (>= 2.15.0), graphics, stats, grDevices",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rprojroot": {
+      "Package": "rprojroot",
+      "Version": "2.1.0",
+      "Depends": "R (>= 3.0.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rrcov": {
+      "Package": "rrcov",
+      "Version": "1.7-7",
+      "Depends": "R (>= 2.10), robustbase (>= 0.92.1), methods",
+      "Imports": "stats, stats4, mvtnorm, lattice, pcaPP",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rstantools": {
+      "Package": "rstantools",
+      "Version": "2.4.0",
+      "Imports": "desc, stats, utils, Rcpp (>= 0.12.16), RcppParallel (>= 5.0.1)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rstatix": {
+      "Package": "rstatix",
+      "Version": "0.7.2",
+      "Depends": "R (>= 3.3.0)",
+      "Imports": "stats, utils, tidyr (>= 1.0.0), purrr, broom (>= 0.7.4), rlang (>= 0.3.1), tibble (>= 2.1.3), dplyr (>= 0.7.1), magrittr, corrplot, tidyselect (>= 1.2.0), car, generics (>= 0.0.2)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rstudioapi": {
+      "Package": "rstudioapi",
+      "Version": "0.17.1",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rsvd": {
+      "Package": "rsvd",
+      "Version": "1.0.5",
+      "Depends": "R (>= 4.0.0)",
+      "Imports": "Matrix",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "rvest": {
+      "Package": "rvest",
+      "Version": "1.0.4",
+      "Depends": "R (>= 3.6)",
+      "Imports": "cli, glue, httr (>= 0.5), lifecycle (>= 1.0.3), magrittr, rlang (>= 1.1.0), selectr, tibble, xml2 (>= 1.3)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "sass": {
+      "Package": "sass",
+      "Version": "0.4.10",
+      "Imports": "fs (>= 1.2.4), rlang (>= 0.4.10), htmltools (>= 0.5.1), R6, rappdirs",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "scales": {
+      "Package": "scales",
+      "Version": "1.4.0",
+      "Depends": "R (>= 4.1)",
+      "Imports": "cli, farver (>= 2.0.3), glue, labeling, lifecycle, R6, RColorBrewer, rlang (>= 1.1.0), viridisLite",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "scatterpie": {
+      "Package": "scatterpie",
+      "Version": "0.2.5",
+      "Depends": "R (>= 4.1.0), ggplot2",
+      "Imports": "ggforce, rlang, ggfun, stats, tidyr, dplyr, utils, yulab.utils (>= 0.1.6)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "selectr": {
+      "Package": "selectr",
+      "Version": "0.4-2",
+      "Depends": "R (>= 3.0)",
+      "Imports": "methods, stringr, R6",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "shape": {
+      "Package": "shape",
+      "Version": "1.4.6.1",
+      "Depends": "R (>= 2.01)",
+      "Imports": "stats, graphics, grDevices",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "shiny": {
+      "Package": "shiny",
+      "Version": "1.11.1",
+      "Depends": "R (>= 3.0.2), methods",
+      "Imports": "utils, grDevices, httpuv (>= 1.5.2), mime (>= 0.3), jsonlite (>= 0.9.16), xtable, fontawesome (>= 0.4.0), htmltools (>= 0.5.4), R6 (>= 2.0), sourcetools, later (>= 1.0.0), promises (>= 1.3.2), tools, cli, rlang (>= 0.4.10), fastmap (>= 1.1.1), withr, commonmark (>= 1.7), glue (>= 1.3.2), bslib (>= 0.6.0), cachem (>= 1.1.0), lifecycle (>= 0.2.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "shinyFiles": {
+      "Package": "shinyFiles",
+      "Version": "0.9.3",
+      "Imports": "htmltools, jsonlite, tools, shiny (>= 1.1.0), fs (>= 1.2.6), tibble (>= 1.4.2)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "shinyWidgets": {
+      "Package": "shinyWidgets",
+      "Version": "0.9.0",
+      "Depends": "R (>= 3.1.0)",
+      "Imports": "bslib, sass, shiny (>= 1.6.0), htmltools (>= 0.5.1), jsonlite, grDevices, rlang",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "shinyalert": {
+      "Package": "shinyalert",
+      "Version": "3.1.0",
+      "Depends": "R (>= 3.0.2)",
+      "Imports": "htmltools (>= 0.3.5), shiny (>= 1.0.4), uuid",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "shinyjqui": {
+      "Package": "shinyjqui",
+      "Version": "0.4.1",
+      "Depends": "R (>= 3.2.0)",
+      "Imports": "shiny (>= 1.5.0), htmltools, htmlwidgets, jsonlite, rlang",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "shinyjs": {
+      "Package": "shinyjs",
+      "Version": "2.1.0",
+      "Depends": "R (>= 3.1.0)",
+      "Imports": "digest (>= 0.6.8), jsonlite, shiny (>= 1.0.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "shinythemes": {
+      "Package": "shinythemes",
+      "Version": "1.2.0",
+      "Depends": "R (>= 3.0.0)",
+      "Imports": "shiny (>= 0.11)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "sitmo": {
+      "Package": "sitmo",
+      "Version": "2.0.2",
+      "Depends": "R (>= 3.2.0)",
+      "Imports": "Rcpp (>= 0.12.13)",
+      "LinkingTo": "Rcpp",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "snow": {
+      "Package": "snow",
+      "Version": "0.4-4",
+      "Depends": "R (>= 2.13.1), utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "sourcetools": {
+      "Package": "sourcetools",
+      "Version": "0.1.7-1",
+      "Depends": "R (>= 3.0.2)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "sparseMatrixStats": {
+      "Package": "sparseMatrixStats",
+      "Version": "1.20.0",
+      "Depends": "MatrixGenerics (>= 1.5.3)",
+      "Imports": "Rcpp, Matrix, matrixStats (>= 0.60.0), methods",
+      "LinkingTo": "Rcpp",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "spatial": {
+      "Package": "spatial",
+      "Version": "7.3-18",
+      "Depends": "R (>= 3.0.0), graphics, stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "statmod": {
+      "Package": "statmod",
+      "Version": "1.5.0",
+      "Depends": "R (>= 3.0.0)",
+      "Imports": "stats, graphics",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "statsExpressions": {
+      "Package": "statsExpressions",
+      "Version": "1.7.1",
+      "Depends": "R (>= 4.3.0), stats",
+      "Imports": "afex (>= 1.4-1), BayesFactor (>= 0.9.12-4.7), bayestestR (>= 0.16.1), correlation (>= 0.8.8), datawizard (>= 1.2.0), dplyr (>= 1.1.4), effectsize (>= 1.0.1), glue (>= 1.8.0), insight (>= 1.3.1), magrittr (>= 2.0.3), parameters (>= 0.27.0), performance (>= 0.15.0), PMCMRplus (>= 1.9.12), purrr (>= 1.1.0), rlang (>= 1.1.6), rstantools (>= 2.4.0), tidyr (>= 1.3.1), withr (>= 3.0.2), WRS2 (>= 1.1-7), zeallot (>= 0.2.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "stringi": {
+      "Package": "stringi",
+      "Version": "1.8.7",
+      "Depends": "R (>= 3.4)",
+      "Imports": "tools, utils, stats",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "stringr": {
+      "Package": "stringr",
+      "Version": "1.5.1",
+      "Depends": "R (>= 3.6)",
+      "Imports": "cli, glue (>= 1.6.1), lifecycle (>= 1.0.3), magrittr, rlang (>= 1.0.0), stringi (>= 1.5.3), vctrs (>= 0.4.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "survival": {
+      "Package": "survival",
+      "Version": "3.8-3",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "graphics, Matrix, methods, splines, stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "sxtTools": {
+      "Package": "sxtTools",
+      "Version": "0.99.01",
+      "Depends": "R (>= 3.0)",
+      "Imports": "dplyr",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "jaspershen",
+      "RemoteRepo": "sxtTools",
+      "RemoteSha": "209d7ecd37240bbacc3c27a93050f50bdfb24f0b",
+      "RemoteRef": "209d7ecd37240bbacc3c27a93050f50bdfb24f0b"
+    },
+    "sys": {
+      "Package": "sys",
+      "Version": "3.4.3",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "systemfonts": {
+      "Package": "systemfonts",
+      "Version": "1.2.3",
+      "Depends": "R (>= 3.2.0)",
+      "Imports": "base64enc, grid, jsonlite, lifecycle, tools, utils",
+      "LinkingTo": "cpp11 (>= 0.2.1)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "textshaping": {
+      "Package": "textshaping",
+      "Version": "1.0.1",
+      "Depends": "R (>= 3.2.0)",
+      "Imports": "lifecycle, stats, stringi, systemfonts (>= 1.1.0), utils",
+      "LinkingTo": "cpp11 (>= 0.2.1), systemfonts (>= 1.0.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "tibble": {
+      "Package": "tibble",
+      "Version": "3.3.0",
+      "Depends": "R (>= 3.4.0)",
+      "Imports": "cli, lifecycle (>= 1.0.0), magrittr, methods, pillar (>= 1.8.1), pkgconfig, rlang (>= 1.0.2), utils, vctrs (>= 0.5.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "tidygraph": {
+      "Package": "tidygraph",
+      "Version": "1.3.1",
+      "Imports": "cli, dplyr (>= 0.8.5), igraph (>= 2.0.0), lifecycle, magrittr, pillar, R6, rlang, stats, tibble, tidyr, tools, utils",
+      "LinkingTo": "cpp11",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "tidymass": {
+      "Package": "tidymass",
+      "Version": "2.0.10",
+      "Depends": "R (>= 4.1)",
+      "Imports": "crayon, purrr, utils, stringr, cli, magrittr, rstudioapi, dplyr, ggplot2, masscleaner, massdataset, massprocesser, massqc, massstat, masstools, metid, metpath, remotes",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "tidymass",
+      "RemoteUsername": "tidymass",
+      "RemoteRef": "54a1a2463ece5e795cc94abaa364edbee85000a1",
+      "RemoteSha": "54a1a2463ece5e795cc94abaa364edbee85000a1"
+    },
+    "tidyr": {
+      "Package": "tidyr",
+      "Version": "1.3.1",
+      "Depends": "R (>= 3.6)",
+      "Imports": "cli (>= 3.4.1), dplyr (>= 1.0.10), glue, lifecycle (>= 1.0.3), magrittr, purrr (>= 1.0.1), rlang (>= 1.1.1), stringr (>= 1.5.0), tibble (>= 2.1.1), tidyselect (>= 1.2.0), utils, vctrs (>= 0.5.2)",
+      "LinkingTo": "cpp11 (>= 0.4.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "tidyselect": {
+      "Package": "tidyselect",
+      "Version": "1.2.1",
+      "Depends": "R (>= 3.4)",
+      "Imports": "cli (>= 3.3.0), glue (>= 1.3.0), lifecycle (>= 1.0.3), rlang (>= 1.0.4), vctrs (>= 0.5.2), withr",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "tidytree": {
+      "Package": "tidytree",
+      "Version": "0.4.6",
+      "Depends": "R (>= 3.4.0)",
+      "Imports": "ape, dplyr, lazyeval, magrittr, methods, rlang, tibble, tidyr, tidyselect, yulab.utils (>= 0.0.4), pillar, cli",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "tidyverse": {
+      "Package": "tidyverse",
+      "Version": "2.0.0",
+      "Depends": "R (>= 3.3)",
+      "Imports": "broom (>= 1.0.3), conflicted (>= 1.2.0), cli (>= 3.6.0), dbplyr (>= 2.3.0), dplyr (>= 1.1.0), dtplyr (>= 1.2.2), forcats (>= 1.0.0), ggplot2 (>= 3.4.1), googledrive (>= 2.0.0), googlesheets4 (>= 1.0.1), haven (>= 2.5.1), hms (>= 1.1.2), httr (>= 1.4.4), jsonlite (>= 1.8.4), lubridate (>= 1.9.2), magrittr (>= 2.0.3), modelr (>= 0.1.10), pillar (>= 1.8.1), purrr (>= 1.0.1), ragg (>= 1.2.5), readr (>= 2.1.4), readxl (>= 1.4.2), reprex (>= 2.0.2), rlang (>= 1.0.6), rstudioapi (>= 0.14), rvest (>= 1.0.3), stringr (>= 1.5.0), tibble (>= 3.1.8), tidyr (>= 1.3.0), xml2 (>= 1.3.3)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "timechange": {
+      "Package": "timechange",
+      "Version": "0.3.0",
+      "Depends": "R (>= 3.3)",
+      "LinkingTo": "cpp11 (>= 0.2.7)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "tinytex": {
+      "Package": "tinytex",
+      "Version": "0.58",
+      "Imports": "xfun (>= 0.48)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "treeio": {
+      "Package": "treeio",
+      "Version": "1.32.0",
+      "Depends": "R (>= 4.1.0)",
+      "Imports": "ape, dplyr, jsonlite, magrittr, methods, rlang, stats, tibble, tidytree (>= 0.4.5), utils, yulab.utils (>= 0.1.6)",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "tweenr": {
+      "Package": "tweenr",
+      "Version": "2.0.3",
+      "Depends": "R (>= 3.2.0)",
+      "Imports": "farver, magrittr, rlang, vctrs",
+      "LinkingTo": "cpp11 (>= 0.4.2)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "tzdb": {
+      "Package": "tzdb",
+      "Version": "0.5.0",
+      "Depends": "R (>= 4.0.0)",
+      "LinkingTo": "cpp11 (>= 0.5.2)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "utf8": {
+      "Package": "utf8",
+      "Version": "1.2.6",
+      "Depends": "R (>= 2.10)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "uuid": {
+      "Package": "uuid",
+      "Version": "1.2-1",
+      "Depends": "R (>= 2.9.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "vctrs": {
+      "Package": "vctrs",
+      "Version": "0.6.5",
+      "Depends": "R (>= 3.5.0)",
+      "Imports": "cli (>= 3.4.0), glue, lifecycle (>= 1.0.3), rlang (>= 1.1.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "viridis": {
+      "Package": "viridis",
+      "Version": "0.6.5",
+      "Depends": "R (>= 2.10), viridisLite (>= 0.4.0)",
+      "Imports": "ggplot2 (>= 1.0.1), gridExtra",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "viridisLite": {
+      "Package": "viridisLite",
+      "Version": "0.4.2",
+      "Depends": "R (>= 2.10)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "vroom": {
+      "Package": "vroom",
+      "Version": "1.6.5",
+      "Depends": "R (>= 3.6)",
+      "Imports": "bit64, cli (>= 3.2.0), crayon, glue, hms, lifecycle (>= 1.0.3), methods, rlang (>= 0.4.2), stats, tibble (>= 2.0.0), tidyselect, tzdb (>= 0.1.1), vctrs (>= 0.2.0), withr",
+      "LinkingTo": "cpp11 (>= 0.2.0), progress (>= 1.2.1), tzdb (>= 0.1.1)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "vsn": {
+      "Package": "vsn",
+      "Version": "3.76.0",
+      "Depends": "R (>= 4.0.0), methods, Biobase",
+      "Imports": "affy, limma, lattice, ggplot2",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "withr": {
+      "Package": "withr",
+      "Version": "3.0.2",
+      "Depends": "R (>= 3.6.0)",
+      "Imports": "graphics, grDevices",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "writexl": {
+      "Package": "writexl",
+      "Version": "1.5.4",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "xcms": {
+      "Package": "xcms",
+      "Version": "4.6.3",
+      "Depends": "R (>= 4.1.0), BiocParallel (>= 1.8.0)",
+      "Imports": "MSnbase (>= 2.33.3), mzR (>= 2.25.3), methods, Biobase, BiocGenerics, ProtGenerics (>= 1.37.1), lattice, MassSpecWavelet (>= 1.66.0), S4Vectors, IRanges, SummarizedExperiment, MsCoreUtils (>= 1.15.5), MsFeatures, MsExperiment (>= 1.10.1), Spectra (>= 1.15.7), progress, RColorBrewer, MetaboCoreUtils (>= 1.11.2)",
+      "Source": "Bioconductor",
+      "Repository": "Bioconductor"
+    },
+    "xfun": {
+      "Package": "xfun",
+      "Version": "0.53",
+      "Depends": "R (>= 3.2.0)",
+      "Imports": "grDevices, stats, tools",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "xml2": {
+      "Package": "xml2",
+      "Version": "1.4.0",
+      "Depends": "R (>= 3.6.0)",
+      "Imports": "cli, methods, rlang (>= 1.1.0)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "xtable": {
+      "Package": "xtable",
+      "Version": "1.8-4",
+      "Depends": "R (>= 2.10.0)",
+      "Imports": "stats, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "yaml": {
+      "Package": "yaml",
+      "Version": "2.3.10",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "yulab.utils": {
+      "Package": "yulab.utils",
+      "Version": "0.2.1",
+      "Depends": "R (>= 4.2.0)",
+      "Imports": "cli, digest, fs, rappdirs, rlang, tools, utils",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "zeallot": {
+      "Package": "zeallot",
+      "Version": "0.2.0",
+      "Depends": "R (>= 3.2)",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "zip": {
+      "Package": "zip",
+      "Version": "2.3.3",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+Package: lipidflowshiny
+Title: LipidFlow Shiny App
+Version: 0.3.0
+Encoding: UTF-8
+Description: Web-based untargeted lipidomics tool - peak picking, lipid
+    annotation, and quantification. Reorganized into mod_/utils_ files
+    (plain Shiny app, not an R package) - content preserved verbatim from
+    the original package structure, only file layout changed.
+Imports:
+    shiny,
+    bslib,
+    shinyjs,
+    DT,
+    reactable,
+    htmltools,
+    readxl,
+    readr,
+    openxlsx,
+    callr,
+    ps,
+    zip,
+    dplyr,
+    tidyr,
+    purrr,
+    plotly,
+    htmlwidgets,
+    ggplot2,
+    patchwork,
+    massprocesser,
+    massdataset,
+    metid,
+    lipidflow,
+    MSnbase,
+    xcms
+Suggests:
+    testthat

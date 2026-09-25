@@ -1,0 +1,21 @@
+{
+  "tables": [
+    {
+      "name": "POS peak table",
+      "file": "POS_peak_table",
+      "rows": 13848,
+      "columns": 7
+    }
+  ],
+  "capabilities": [
+    "tables",
+    "raw",
+    "objects"
+  ],
+  "note": "",
+  "metrics": [],
+  "sides": [
+    "pos"
+  ],
+  "kind": "raw"
+}

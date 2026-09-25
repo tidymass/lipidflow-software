@@ -1,0 +1,10 @@
+node_modules/
+dist/
+release/
+runtime/
+vendor/
+test-output/
+.DS_Store
+
+__pycache__/
+*.pyc

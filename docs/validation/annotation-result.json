@@ -1,0 +1,27 @@
+{
+  "tables": [
+    {
+      "name": "POS peak table",
+      "file": "POS_peak_table",
+      "rows": 2,
+      "columns": 5
+    },
+    {
+      "name": "POS annotation table",
+      "file": "POS_annotation_table",
+      "rows": 2,
+      "columns": 18
+    }
+  ],
+  "capabilities": [
+    "tables",
+    "objects",
+    "annotations"
+  ],
+  "note": "",
+  "metrics": [],
+  "sides": [
+    "pos"
+  ],
+  "kind": "objects"
+}

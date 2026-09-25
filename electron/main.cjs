@@ -1,0 +1,47 @@
+const {app,BrowserWindow,ipcMain,dialog,shell,Menu}=require('electron');
+const fs=require('node:fs/promises'),path=require('node:path'),{spawn}=require('node:child_process'),{randomUUID}=require('node:crypto');
+const {findRscript,rEnvironment,stopProcessTree}=require('./platform.cjs');
+const {createProjectStore}=require('./project-store.cjs');
+const {validate}=require('./workflow.cjs');
+app.setName('LipidFlow');
+if(process.env.LIPIDFLOW_TEST_USER_DATA)app.setPath('userData',process.env.LIPIDFLOW_TEST_USER_DATA);
+const store=createProjectStore();let win,project,active,busy=false,closing=false;
+const root=()=>app.isPackaged?process.resourcesPath:app.getAppPath();
+const idle=()=>{if(busy||active)throw Error('An analysis is running. Wait or cancel it first.');};
+const atomic=async(file,value)=>{await fs.mkdir(path.dirname(file),{recursive:true});const tmp=file+'.tmp';await fs.writeFile(tmp,JSON.stringify(value,null,2));await fs.rename(tmp,file);};
+async function recent(){try{return JSON.parse(await fs.readFile(path.join(app.getPath('userData'),'recent.json'),'utf8'));}catch(e){if(e.code==='ENOENT')return [];throw e;}}
+async function remember(){await atomic(path.join(app.getPath('userData'),'recent.json'),[{name:project.name,path:project.path,mode:project.mode},...(await recent()).filter(p=>p.path!==project.path)].slice(0,12));}
+async function open(folder){const p=JSON.parse(await fs.readFile(path.join(folder,'project.json'),'utf8'));if(p.application!=='lipidflow'||p.schema!==1||!Array.isArray(p.runs))throw Error('Choose a LipidFlow project folder.');for(const r of p.runs){if(!/^[a-zA-Z0-9-]+$/.test(r.id))throw Error('Invalid run ID.');if(r.status==='running'){r.status='interrupted';r.error='The app closed during this run.';}if(r.status==='completed'){try{await fs.access(path.join(folder,'runs',r.id,'object.rds'));}catch{r.status='missing';r.error='Saved data is missing.';}}}await store.acquire(folder);project={...p,path:folder};await store.save(project);await remember();return project;}
+async function execute(operation,params,dir,input){
+ if(active)throw Error('R is busy.');await fs.mkdir(dir,{recursive:true});
+ await fs.cp(path.join(root(),'backend','helpers'),path.join(dir,'helpers'),{recursive:true});await fs.copyFile(path.join(root(),'backend','worker.R'),path.join(dir,'worker.R'));
+ await fs.copyFile(path.join(root(),'backend','sources.json'),path.join(dir,'sources.json'));
+ await atomic(path.join(dir,'request.json'),{operation,params,input,output:dir,databaseDir:path.join(root(),'backend','databases')});
+ await fs.writeFile(path.join(dir,'reproduce.R'),'# Run from this directory with the LipidFlow R environment.\nargs <- "request.json"\nsource("worker.R", chdir=TRUE)\n');
+ const exe=await findRscript(root(),app.isPackaged);return new Promise((resolve,reject)=>{
+ const child=spawn(exe,['--vanilla',path.join(dir,'worker.R'),path.join(dir,'request.json')],{cwd:dir,detached:process.platform!=='win32',windowsHide:true,env:rEnvironment(exe)});const task={child,cancelled:false};active=task;let log='',writes=Promise.resolve();
+ const append=c=>{const s=String(c);log=(log+s).slice(-50000);writes=writes.then(()=>fs.appendFile(path.join(dir,'run.log'),s));if(win&&!win.isDestroyed())win.webContents.send('engine-log',s);};child.stdout.on('data',append);child.stderr.on('data',append);
+ child.once('error',e=>{active=null;reject(e)});child.once('close',async code=>{active=null;try{await writes;if(task.cancelled)throw Error('Task cancelled.');if(code!==0)throw Error(log.slice(-6000)||'R analysis failed.');resolve(JSON.parse(await fs.readFile(path.join(dir,'result.json'),'utf8')))}catch(e){reject(e)}});
+ });
+}
+function selected(id){const r=project?.runs.find(r=>r.id===id);if(!r)throw Error('Run not found.');return {run:r,dir:path.join(project.path,'runs',r.id)};}
+ipcMain.handle('recentProjects',recent);
+ipcMain.handle('createProject',async(_,{name,mode,parent})=>{idle();if(!['workflow','extraction'].includes(mode))throw Error('Invalid project type.');const d=process.env.LIPIDFLOW_TEST_USER_DATA&&parent?{filePaths:[parent]}:await dialog.showOpenDialog(win,{properties:['openDirectory','createDirectory'],title:'Choose a parent folder'});if(d.canceled)return null;const safe=String(name).replace(/[^\p{L}\p{N} _-]/gu,'').trim().slice(0,80);if(!safe)throw Error('Enter a project name.');const folder=path.join(d.filePaths[0],safe);await fs.mkdir(folder);await store.acquire(folder);project={application:'lipidflow',schema:1,id:randomUUID(),name:safe,mode,path:folder,runs:[],created:new Date().toISOString()};await store.save(project);await remember();return project;});
+ipcMain.handle('openProject',async(_,folder)=>{idle();if(!folder){const d=await dialog.showOpenDialog(win,{properties:['openDirectory']});if(d.canceled)return null;folder=d.filePaths[0];}return open(folder);});
+ipcMain.handle('pick',async(_,kind)=>{idle();const multi=['rawFiles','ms2Files'].includes(kind);const d=await dialog.showOpenDialog(win,{properties:kind==='directory'?['openDirectory']:['openFile',...(multi?['multiSelections']:[])],filters:kind==='directory'?[]:[{name:'Analysis data',extensions:kind==='rawFiles'||kind==='raw'?['mzML','mzXML']:kind==='ms2Files'?['mgf','mzML','mzXML']:kind==='csv'?['csv']:kind==='xlsx'?['xlsx']:['rds','rda','RData']}]});return d.canceled?null:multi?d.filePaths:d.filePaths[0];});
+ipcMain.handle('environment',async()=>{idle();busy=true;try{return await execute('environment',{},await fs.mkdtemp(path.join(app.getPath('temp'),'lipidflow-env-')),null)}finally{busy=false}});
+ipcMain.handle('run',async(_,{operation,params,inputId})=>{idle();if(!project)throw Error('Open a project first.');if(operation==='extraction'){params={...params};delete params.samples_pos;delete params.samples_neg;}const input=validate(project,operation,inputId);busy=true;const id=randomUUID(),dir=path.join(project.path,'runs',id);const run={id,operation,params,inputId:input?.id||null,status:'running',started:new Date().toISOString()};try{project.runs.push(run);await store.save(project);try{run.result=await execute(operation,params,dir,input?path.join(project.path,'runs',input.id,'object.rds'):null);run.status='completed';}catch(e){run.status=e.message==='Task cancelled.'?'cancelled':'failed';run.error=e.message;}run.finished=new Date().toISOString();await store.save(project);return project;}finally{busy=false;}});
+ipcMain.handle('cancel',()=>{if(active){active.cancelled=true;stopProcessTree(active.child);}});
+ipcMain.handle('log',async(_,id)=>{const {dir}=selected(id);try{return await fs.readFile(path.join(dir,'run.log'),'utf8')}catch{return ''}});
+ipcMain.handle('table',async(_,{runId,name})=>{const {dir,run}=selected(runId);const t=run.result?.tables?.find(t=>t.name===name);if(!t)throw Error('Table not found.');return JSON.parse(await fs.readFile(path.join(dir,'tables',t.file+'.json'),'utf8'));});
+ipcMain.handle('reveal',async(_,id)=>{const folder=id?selected(id).dir:project?.path;if(!folder)throw Error('Open a project first.');const error=await shell.openPath(folder);if(error)throw Error(error);});
+ipcMain.handle('export',async(_,id)=>{idle();const {dir}=selected(id);const d=await dialog.showOpenDialog(win,{title:'Export this run',properties:['openDirectory','createDirectory']});if(d.canceled)return null;busy=true;try{const dest=await fs.mkdtemp(path.join(d.filePaths[0],'LipidFlow-results-'));await fs.cp(dir,dest,{recursive:true});return dest;}finally{busy=false}});
+ipcMain.handle('labWebsite',()=>shell.openExternal('https://www.chuchuwanglab.com/'));
+ipcMain.handle('help',()=>shell.openExternal('https://github.com/jaspershen-lab/lipidflow'));
+ipcMain.handle('appearance',(e,{scale})=>{if(![100,110,125,150].includes(scale))throw Error('Invalid size');e.sender.setZoomFactor(scale/100)});
+app.whenReady().then(()=>{win=new BrowserWindow({width:1440,height:950,minWidth:1080,minHeight:700,title:'LipidFlow',titleBarStyle:process.platform==='darwin'?'hiddenInset':'default',backgroundColor:'#f7f8fa',webPreferences:{preload:path.join(__dirname,'preload.cjs'),contextIsolation:true,nodeIntegration:false,sandbox:true}});win.webContents.setWindowOpenHandler(()=>({action:'deny'}));win.webContents.on('will-navigate',e=>e.preventDefault());win.loadFile(path.join(__dirname,'../dist/index.html'));Menu.setApplicationMenu(Menu.buildFromTemplate([{label:'LipidFlow',submenu:[{role:'about'},{type:'separator'},{role:'quit'}]},{role:'editMenu'},{role:'viewMenu'},{role:'windowMenu'}]));win.on('close',e=>{if(closing)return;e.preventDefault();if(busy){const result=dialog.showMessageBoxSync(win,{message:'Stop the running analysis and quit?',buttons:['Keep running','Stop and quit'],defaultId:0,cancelId:0});if(result===0)return;if(active){active.cancelled=true;stopProcessTree(active.child);}}closing=true;store.release().finally(()=>win.destroy());});});
+app.on('window-all-closed',()=>app.quit());
+
+ipcMain.handle('eic',async(_,{runId,side})=>{if(!['pos','neg'].includes(side))throw Error('Invalid polarity');const {dir}=selected(runId);try{return JSON.parse(await fs.readFile(path.join(dir,side.toUpperCase()+'_eic.json'),'utf8'))}catch(e){if(e.code==='ENOENT')throw Error('EIC traces are unavailable. Inspect the run log.');throw e}});
+
+ipcMain.handle('downloadSelected',async(_,{runId,side})=>{idle();const {dir,run}=selected(runId);busy=true;try{const result=await require('./selected-export.cjs').exportSelected({projectPath:project.path,runDir:dir,run,side});await shell.openPath(result.path);return result;}finally{busy=false}});

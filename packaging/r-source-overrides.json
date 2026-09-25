@@ -1,0 +1,88 @@
+{
+  "massprocesser": {
+    "Version": "1.0.10",
+    "Source": "GitHub",
+    "RemoteType": "github",
+    "RemoteHost": "api.github.com",
+    "RemoteUsername": "tidymass",
+    "RemoteRepo": "massprocesser",
+    "RemoteRef": "edb9a9bf077947f13ad3c21279096204d1b8dd09",
+    "RemoteSha": "edb9a9bf077947f13ad3c21279096204d1b8dd09",
+    "Note": "Legacy installed package lacks provenance; source version matched via repository history. Functional parity must be validated on Windows."
+  },
+  "masscleaner": {
+    "Version": "1.0.12",
+    "Source": "GitHub",
+    "RemoteType": "github",
+    "RemoteHost": "api.github.com",
+    "RemoteUsername": "tidymass",
+    "RemoteRepo": "masscleaner",
+    "RemoteRef": "e0979ec8bcc5c519c4d2160d7d9e93d5ea7d6274",
+    "RemoteSha": "e0979ec8bcc5c519c4d2160d7d9e93d5ea7d6274",
+    "Note": "Legacy installed package lacks provenance; source version matched via repository history."
+  },
+  "massstat": {
+    "Version": "1.0.5",
+    "Source": "GitHub",
+    "RemoteType": "github",
+    "RemoteHost": "api.github.com",
+    "RemoteUsername": "tidymass",
+    "RemoteRepo": "massstat",
+    "RemoteRef": "0fe90d7a853f8181cdcdb4ea19ca6d1a34a460f2",
+    "RemoteSha": "0fe90d7a853f8181cdcdb4ea19ca6d1a34a460f2",
+    "Note": "Legacy installed package lacks provenance; source version matched via repository history."
+  },
+  "massqc": {
+    "Version": "1.0.6",
+    "Source": "GitHub",
+    "RemoteType": "github",
+    "RemoteHost": "api.github.com",
+    "RemoteUsername": "tidymass",
+    "RemoteRepo": "massqc",
+    "RemoteRef": "4bc57d19133aa17ddc3df2df05442a348a53f6a7",
+    "RemoteSha": "4bc57d19133aa17ddc3df2df05442a348a53f6a7",
+    "Note": "Legacy installed package lacks provenance; source version matched via repository history."
+  },
+  "GenomeInfoDbData": {
+    "Version": "1.2.14",
+    "Source": "Bioconductor",
+    "Repository": "Bioconductor"
+  },
+  "S4Vectors": {
+    "Version": "0.48.0",
+    "Source": "GitHub",
+    "RemoteType": "github",
+    "RemoteHost": "api.github.com",
+    "RemoteUsername": "bioc",
+    "RemoteRepo": "S4Vectors",
+    "RemoteRef": "c4f37f052d7c4ee8ff0d62a6adec355129258263",
+    "RemoteSha": "c4f37f052d7c4ee8ff0d62a6adec355129258263",
+    "Note": "Preserve the exact r-universe source commit in the macOS bundle, even though most other Bioconductor packages are from 3.21."
+  },
+  "GO.db": {
+    "Version": "3.21.0",
+    "Source": "Bioconductor",
+    "Repository": "Bioconductor",
+    "Note": "Bioconductor annotation database bundled for MetMiner dependencies; installed DESCRIPTION omits Repository."
+  },
+  "lipidflow": {
+    "Version": "0.0.1",
+    "Source": "GitHub",
+    "RemoteType": "github",
+    "RemoteHost": "api.github.com",
+    "RemoteUsername": "jaspershen-lab",
+    "RemoteRepo": "lipidflow",
+    "RemoteSha": "7a44a1f341973de2db81af6c9c191bf40e30a13e",
+    "RemoteRef": "7a44a1f341973de2db81af6c9c191bf40e30a13e"
+  },
+  "sxtTools": {
+    "Version": "0.99.01",
+    "Source": "GitHub",
+    "RemoteType": "github",
+    "RemoteHost": "api.github.com",
+    "RemoteUsername": "jaspershen",
+    "RemoteRepo": "sxtTools",
+    "RemoteSha": "209d7ecd37240bbacc3c27a93050f50bdfb24f0b",
+    "RemoteRef": "209d7ecd37240bbacc3c27a93050f50bdfb24f0b"
+  }
+}

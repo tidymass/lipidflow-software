@@ -1,0 +1,69 @@
+Processing  POS 
+Using AnnotatedDataFrame for MSnbase compatibility (TidyMass adapter).
+QC is not in you directory, so set is as  D25
+Reading raw data, it will take a while...
+Reading 18519 spectra from file D25_1.mzXML
+Reading 18473 spectra from file D25_2.mzXML
+Reading 18464 spectra from file M19_1.mzXML
+Reading 18381 spectra from file M19_2.mzXML
+OK
+Detecting peaks...
+
+This is xcms version 4.6.3 
+
+
+Attaching package: ‘xcms’
+
+The following objects are masked from ‘package:dplyr’:
+
+    collect, groups
+
+The following object is masked from ‘package:stats’:
+
+    sigma
+
+Detecting mass traces at 15 ppm ... OK
+Detecting chromatographic peaks in 50662 regions of interest ... OK: 8254 found.
+Detecting mass traces at 15 ppm ... OK
+Detecting chromatographic peaks in 46413 regions of interest ... OK: 7973 found.
+Detecting mass traces at 15 ppm ... OK
+Detecting chromatographic peaks in 52648 regions of interest ... OK: 8396 found.
+Detecting mass traces at 15 ppm ... OK
+Detecting chromatographic peaks in 51073 regions of interest ... OK: 8371 found.
+OK
+Correcting rentention time...
+Sample number 2 used as center sample.
+Aligning M19_1.mzXML against D25_2.mzXML ... OK
+
+Aligning D25_1.mzXML against D25_2.mzXML ... OK
+
+Aligning M19_2.mzXML against D25_2.mzXML ... OK
+
+Apply retention time correction performed on MS1 to spectra from all MS levels
+Applying retention time adjustment to the identified chromatographic peaks ... OK
+OK
+Drawing RT correction plot...
+OK
+Drawing TIC plot...
+  |                                                                              |                                                                      |   0%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================================================| 100%
+
+OK
+Drawing BPC plot...
+  |                                                                              |                                                                      |   0%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================================================| 100%
+
+OK
+Grouping peaks across samples...
+OK
+Outputting peak table...
+OK
+OK
+All done!
+Completed:  picking 
+Warning message:
+In fun(libname, pkgname) :
+  mzR has been built against a different Rcpp version (1.0.14)
+than is installed on your system (1.1.0). This might lead to errors
+when loading mzR. If you encounter such issues, please send a report,
+including the output of sessionInfo() to the Bioc support forum at 
+https://support.bioconductor.org/. For details see also
+https://github.com/sneumann/mzR/wiki/mzR-Rcpp-compiler-linker-issue.

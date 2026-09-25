@@ -1,0 +1,1957 @@
+[
+  {
+    "Package": "AnnotationDbi",
+    "Version": "1.70.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "AnnotationFilter",
+    "Version": "1.32.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "BH",
+    "Version": "1.87.0-1",
+    "License": "BSL-1.0"
+  },
+  {
+    "Package": "BWStest",
+    "Version": "0.2.3",
+    "License": "LGPL-3"
+  },
+  {
+    "Package": "BayesFactor",
+    "Version": "0.9.12-4.7",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "Biobase",
+    "Version": "2.68.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "BiocBaseUtils",
+    "Version": "1.10.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "BiocGenerics",
+    "Version": "0.54.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "BiocManager",
+    "Version": "1.30.26",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "BiocParallel",
+    "Version": "1.42.1",
+    "License": "GPL-2 | GPL-3 | BSL-1.0"
+  },
+  {
+    "Package": "BiocSingular",
+    "Version": "1.24.0",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "BiocVersion",
+    "Version": "3.22.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "Biostrings",
+    "Version": "2.76.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "ComplexHeatmap",
+    "Version": "2.24.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "DBI",
+    "Version": "1.2.3",
+    "License": "LGPL (>= 2.1)"
+  },
+  {
+    "Package": "DEoptimR",
+    "Version": "1.1-4",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "DOSE",
+    "Version": "4.2.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "DT",
+    "Version": "0.33",
+    "License": "GPL-3 | file LICENSE"
+  },
+  {
+    "Package": "DelayedArray",
+    "Version": "0.34.1",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "DelayedMatrixStats",
+    "Version": "1.30.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "Deriv",
+    "Version": "4.2.0",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "Formula",
+    "Version": "1.2-5",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "GO.db",
+    "Version": "3.21.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "GOSemSim",
+    "Version": "2.34.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "GenomeInfoDb",
+    "Version": "1.44.2",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "GenomeInfoDbData",
+    "Version": "1.2.14",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "GenomicRanges",
+    "Version": "1.60.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "GetoptLong",
+    "Version": "1.0.5",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "GlobalOptions",
+    "Version": "0.1.2",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "Hmisc",
+    "Version": "5.2-3",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "IRanges",
+    "Version": "2.42.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "KEGGREST",
+    "Version": "1.48.1",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "KernSmooth",
+    "Version": "2.23-26",
+    "License": "Unlimited"
+  },
+  {
+    "Package": "MALDIquant",
+    "Version": "1.22.3",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "MASS",
+    "Version": "7.3-65",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "MDAtoolkits",
+    "Version": "0.0.3",
+    "License": "MIT"
+  },
+  {
+    "Package": "MSnbase",
+    "Version": "2.34.1",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "MassSpecWavelet",
+    "Version": "1.74.0",
+    "License": "LGPL (>= 2)"
+  },
+  {
+    "Package": "Matrix",
+    "Version": "1.7-4",
+    "License": "GPL (>= 2) | file LICENCE"
+  },
+  {
+    "Package": "MatrixGenerics",
+    "Version": "1.20.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "MatrixModels",
+    "Version": "0.5-4",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "MetMiner",
+    "Version": "1.0.1",
+    "License": "MIT"
+  },
+  {
+    "Package": "MetaboCoreUtils",
+    "Version": "1.16.1",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "MsCoreUtils",
+    "Version": "1.20.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "MsExperiment",
+    "Version": "1.10.1",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "MsFeatures",
+    "Version": "1.16.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "MultiAssayExperiment",
+    "Version": "1.34.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "MultiDataSet",
+    "Version": "1.38.0",
+    "License": "file LICENSE"
+  },
+  {
+    "Package": "PCAtools",
+    "Version": "2.20.0",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "PMCMRplus",
+    "Version": "1.9.12",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "PSMatch",
+    "Version": "1.12.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "ProtGenerics",
+    "Version": "1.40.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "QFeatures",
+    "Version": "1.18.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "R.methodsS3",
+    "Version": "1.8.2",
+    "License": "LGPL (>= 2.1)"
+  },
+  {
+    "Package": "R.oo",
+    "Version": "1.27.1",
+    "License": "LGPL (>= 2.1)"
+  },
+  {
+    "Package": "R.utils",
+    "Version": "2.13.0",
+    "License": "LGPL (>= 2.1)"
+  },
+  {
+    "Package": "R6",
+    "Version": "2.6.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "RColorBrewer",
+    "Version": "1.1-3",
+    "License": "Apache License 2.0"
+  },
+  {
+    "Package": "RCurl",
+    "Version": "1.98-1.17",
+    "License": "BSD_3_clause + file LICENSE"
+  },
+  {
+    "Package": "RSQLite",
+    "Version": "2.4.3",
+    "License": "LGPL (>= 2.1)"
+  },
+  {
+    "Package": "RSpectra",
+    "Version": "0.16-2",
+    "License": "MPL (>= 2)"
+  },
+  {
+    "Package": "Rcpp",
+    "Version": "1.1.0",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "RcppArmadillo",
+    "Version": "14.6.3-1",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "RcppEigen",
+    "Version": "0.3.4.0.2",
+    "License": "GPL (>= 2) | file LICENSE"
+  },
+  {
+    "Package": "RcppParallel",
+    "Version": "5.1.10",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "Rdisop",
+    "Version": "1.68.0",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "Rdpack",
+    "Version": "2.6.4",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "Rhdf5lib",
+    "Version": "1.30.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "Rmpfr",
+    "Version": "1.1-1",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "S4Arrays",
+    "Version": "1.8.1",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "S4Vectors",
+    "Version": "0.48.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "S7",
+    "Version": "0.2.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "ScaledMatrix",
+    "Version": "1.16.0",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "SparseArray",
+    "Version": "1.8.1",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "SparseM",
+    "Version": "1.84-2",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "Spectra",
+    "Version": "1.18.2",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "SummarizedExperiment",
+    "Version": "1.38.1",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "SuppDists",
+    "Version": "1.1-9.9",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "UCSC.utils",
+    "Version": "1.4.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "WRS2",
+    "Version": "1.1-7",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "XML",
+    "Version": "3.99-0.19",
+    "License": "BSD_3_clause + file LICENSE"
+  },
+  {
+    "Package": "XVector",
+    "Version": "0.48.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "abind",
+    "Version": "1.4-8",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "afex",
+    "Version": "1.4-1",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "affy",
+    "Version": "1.86.0",
+    "License": "LGPL (>= 2.0)"
+  },
+  {
+    "Package": "affyio",
+    "Version": "1.78.0",
+    "License": "LGPL (>= 2)"
+  },
+  {
+    "Package": "ape",
+    "Version": "5.8-1",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "aplot",
+    "Version": "0.2.8",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "askpass",
+    "Version": "1.2.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "assorthead",
+    "Version": "1.2.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "attempt",
+    "Version": "0.3.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "backports",
+    "Version": "1.5.0",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "base",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "base64enc",
+    "Version": "0.1-3",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "bayestestR",
+    "Version": "0.16.1",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "beachmat",
+    "Version": "2.24.0",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "bit",
+    "Version": "4.6.0",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "bit64",
+    "Version": "4.6.0-1",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "bitops",
+    "Version": "1.0-9",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "blob",
+    "Version": "1.2.4",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "boot",
+    "Version": "1.3-32",
+    "License": "Unlimited"
+  },
+  {
+    "Package": "broom",
+    "Version": "1.0.9",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "bsicons",
+    "Version": "0.1.2",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "bslib",
+    "Version": "0.9.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "cachem",
+    "Version": "1.1.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "calibrate",
+    "Version": "1.7.7",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "callr",
+    "Version": "3.7.6",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "car",
+    "Version": "3.1-3",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "carData",
+    "Version": "3.0-5",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "cellranger",
+    "Version": "1.1.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "checkmate",
+    "Version": "2.3.3",
+    "License": "BSD_3_clause + file LICENSE"
+  },
+  {
+    "Package": "circlize",
+    "Version": "0.4.16",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "class",
+    "Version": "7.3-23",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "cli",
+    "Version": "3.6.5",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "clipr",
+    "Version": "0.8.0",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "clue",
+    "Version": "0.3-66",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "cluster",
+    "Version": "2.1.8.1",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "clusterProfiler",
+    "Version": "4.16.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "coda",
+    "Version": "0.19-4.1",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "codetools",
+    "Version": "0.2-20",
+    "License": "GPL"
+  },
+  {
+    "Package": "colorspace",
+    "Version": "2.1-1",
+    "License": "BSD_3_clause + file LICENSE"
+  },
+  {
+    "Package": "colourpicker",
+    "Version": "1.3.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "commonmark",
+    "Version": "2.0.0",
+    "License": "BSD_2_clause + file LICENSE"
+  },
+  {
+    "Package": "compiler",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "config",
+    "Version": "0.3.2",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "conflicted",
+    "Version": "1.2.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "contfrac",
+    "Version": "1.1-12",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "corpcor",
+    "Version": "1.6.10",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "correlation",
+    "Version": "0.8.8",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "corrplot",
+    "Version": "0.95",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "cowplot",
+    "Version": "1.2.0",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "cpp11",
+    "Version": "0.5.2",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "crayon",
+    "Version": "1.5.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "crosstalk",
+    "Version": "1.2.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "curl",
+    "Version": "7.0.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "dashboardthemes",
+    "Version": "1.1.6",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "data.table",
+    "Version": "1.17.8",
+    "License": "MPL-2.0 | file LICENSE"
+  },
+  {
+    "Package": "datasets",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "datawizard",
+    "Version": "1.2.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "dbplyr",
+    "Version": "2.5.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "deSolve",
+    "Version": "1.40",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "desc",
+    "Version": "1.4.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "digest",
+    "Version": "0.6.37",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "doBy",
+    "Version": "4.7.0",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "doParallel",
+    "Version": "1.0.17",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "doRNG",
+    "Version": "1.8.6.2",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "dplyr",
+    "Version": "1.1.4",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "dqrng",
+    "Version": "0.4.1",
+    "License": "AGPL-3"
+  },
+  {
+    "Package": "dtplyr",
+    "Version": "1.3.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "e1071",
+    "Version": "1.7-16",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "effectsize",
+    "Version": "1.0.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "ellipse",
+    "Version": "0.5.0",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "elliptic",
+    "Version": "1.4-0",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "enrichplot",
+    "Version": "1.28.4",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "evaluate",
+    "Version": "1.0.4",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "farver",
+    "Version": "2.1.2",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "fastDummies",
+    "Version": "1.7.5",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "fastmap",
+    "Version": "1.2.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "fastmatch",
+    "Version": "1.1-6",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "fgsea",
+    "Version": "1.34.2",
+    "License": "MIT + file LICENCE"
+  },
+  {
+    "Package": "fit.models",
+    "Version": "0.64",
+    "License": "GPL"
+  },
+  {
+    "Package": "fontawesome",
+    "Version": "0.5.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "forcats",
+    "Version": "1.0.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "foreach",
+    "Version": "1.5.2",
+    "License": "Apache License (== 2.0)"
+  },
+  {
+    "Package": "foreign",
+    "Version": "0.8-90",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "formatR",
+    "Version": "1.14",
+    "License": "GPL"
+  },
+  {
+    "Package": "fs",
+    "Version": "1.6.6",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "furrr",
+    "Version": "0.3.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "futile.logger",
+    "Version": "1.4.3",
+    "License": "LGPL-3"
+  },
+  {
+    "Package": "futile.options",
+    "Version": "1.0.1",
+    "License": "LGPL-3"
+  },
+  {
+    "Package": "future",
+    "Version": "1.67.0",
+    "License": "LGPL (>= 2.1)"
+  },
+  {
+    "Package": "gargle",
+    "Version": "1.5.2",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "generics",
+    "Version": "0.1.4",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "ggcorrplot",
+    "Version": "0.1.4.1",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "ggforce",
+    "Version": "0.5.0.9000",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "ggfortify",
+    "Version": "0.4.19",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "ggfun",
+    "Version": "0.2.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "ggnewscale",
+    "Version": "0.5.2",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "ggplot2",
+    "Version": "4.0.2",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "ggplotify",
+    "Version": "0.1.2",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "ggraph",
+    "Version": "2.2.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "ggrepel",
+    "Version": "0.9.6",
+    "License": "GPL-3 | file LICENSE"
+  },
+  {
+    "Package": "ggsci",
+    "Version": "3.2.0",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "ggside",
+    "Version": "0.3.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "ggsignif",
+    "Version": "0.6.4",
+    "License": "GPL-3 | file LICENSE"
+  },
+  {
+    "Package": "ggstatsplot",
+    "Version": "0.13.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "ggtangle",
+    "Version": "0.0.7",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "ggtree",
+    "Version": "3.16.3",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "globals",
+    "Version": "0.18.0",
+    "License": "LGPL (>= 2.1)"
+  },
+  {
+    "Package": "glue",
+    "Version": "1.8.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "gmp",
+    "Version": "0.7-5",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "golem",
+    "Version": "0.5.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "googledrive",
+    "Version": "2.1.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "googlesheets4",
+    "Version": "1.1.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "grDevices",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "graphics",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "graphlayouts",
+    "Version": "1.2.2",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "grid",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "gridExtra",
+    "Version": "2.3",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "gridGraphics",
+    "Version": "0.5-1",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "gsignal",
+    "Version": "0.3-7",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "gson",
+    "Version": "0.1.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "gtable",
+    "Version": "0.3.6",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "haven",
+    "Version": "2.5.5",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "here",
+    "Version": "1.0.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "highr",
+    "Version": "0.11",
+    "License": "GPL"
+  },
+  {
+    "Package": "hms",
+    "Version": "1.1.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "htmlTable",
+    "Version": "2.4.3",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "htmltools",
+    "Version": "0.5.8.1",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "htmlwidgets",
+    "Version": "1.6.4",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "httpuv",
+    "Version": "1.6.16",
+    "License": "GPL (>= 2) | file LICENSE"
+  },
+  {
+    "Package": "httr",
+    "Version": "1.4.7",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "httr2",
+    "Version": "1.2.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "hypergeo",
+    "Version": "1.2-14",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "ids",
+    "Version": "1.0.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "igraph",
+    "Version": "2.1.4",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "impute",
+    "Version": "1.82.0",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "insight",
+    "Version": "1.4.0",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "irlba",
+    "Version": "2.3.5.1",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "isoband",
+    "Version": "0.2.7",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "iterators",
+    "Version": "1.0.14",
+    "License": "Apache License (== 2.0)"
+  },
+  {
+    "Package": "itertools",
+    "Version": "0.1-3",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "jquerylib",
+    "Version": "0.1.4",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "jsonlite",
+    "Version": "2.0.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "kSamples",
+    "Version": "1.2-10",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "knitr",
+    "Version": "1.50",
+    "License": "GPL"
+  },
+  {
+    "Package": "labeling",
+    "Version": "0.4.3",
+    "License": "MIT + file LICENSE | Unlimited"
+  },
+  {
+    "Package": "lambda.r",
+    "Version": "1.2.4",
+    "License": "LGPL-3"
+  },
+  {
+    "Package": "later",
+    "Version": "1.4.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "lattice",
+    "Version": "0.22-7",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "lazyeval",
+    "Version": "0.2.2",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "lifecycle",
+    "Version": "1.0.4",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "limma",
+    "Version": "3.64.3",
+    "License": "GPL (>=2)"
+  },
+  {
+    "Package": "lipidflow",
+    "Version": "0.0.1",
+    "License": "GPL-2 | file LICENSE"
+  },
+  {
+    "Package": "listenv",
+    "Version": "0.9.1",
+    "License": "LGPL (>= 2.1)"
+  },
+  {
+    "Package": "lme4",
+    "Version": "1.1-37",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "lmerTest",
+    "Version": "3.1-3",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "lubridate",
+    "Version": "1.9.4",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "magrittr",
+    "Version": "2.0.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "masscleaner",
+    "Version": "1.0.12",
+    "License": "GPL-2 | file LICENSE"
+  },
+  {
+    "Package": "massdataset",
+    "Version": "0.99.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "massprocesser",
+    "Version": "1.0.10",
+    "License": "GPL-2 | file LICENSE"
+  },
+  {
+    "Package": "massqc",
+    "Version": "1.0.6",
+    "License": "GPL-2 | file LICENSE"
+  },
+  {
+    "Package": "massstat",
+    "Version": "1.0.5",
+    "License": "GPL-2 | file LICENSE"
+  },
+  {
+    "Package": "masstools",
+    "Version": "0.99.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "matrixStats",
+    "Version": "1.5.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "memoise",
+    "Version": "2.0.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "methods",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "metid",
+    "Version": "1.3.2",
+    "License": "GPL-2 | file LICENSE"
+  },
+  {
+    "Package": "metpath",
+    "Version": "1.0.10",
+    "License": "GPL-2 | file LICENSE"
+  },
+  {
+    "Package": "mgcv",
+    "Version": "1.9-3",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "microbenchmark",
+    "Version": "1.5.0",
+    "License": "BSD_2_clause + file LICENSE"
+  },
+  {
+    "Package": "mime",
+    "Version": "0.13",
+    "License": "GPL"
+  },
+  {
+    "Package": "miniUI",
+    "Version": "0.1.2",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "minqa",
+    "Version": "1.2.8",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "missForest",
+    "Version": "1.5",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "mixOmics",
+    "Version": "6.32.0",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "modelr",
+    "Version": "0.1.11",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "multcompView",
+    "Version": "0.1-10",
+    "License": "GPL"
+  },
+  {
+    "Package": "mvtnorm",
+    "Version": "1.3-3",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "mzID",
+    "Version": "1.46.0",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "mzR",
+    "Version": "2.42.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "ncdf4",
+    "Version": "1.24",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "nlme",
+    "Version": "3.1-168",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "nloptr",
+    "Version": "2.2.1",
+    "License": "LGPL (>= 3)"
+  },
+  {
+    "Package": "nnet",
+    "Version": "7.3-20",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "numDeriv",
+    "Version": "2016.8-1.1",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "openssl",
+    "Version": "2.3.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "openxlsx",
+    "Version": "4.2.8",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "paletteer",
+    "Version": "1.6.0",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "parallel",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "parallelly",
+    "Version": "1.45.1",
+    "License": "LGPL (>= 2.1)"
+  },
+  {
+    "Package": "parameters",
+    "Version": "0.28.0",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "patchwork",
+    "Version": "1.3.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "pbapply",
+    "Version": "1.7-4",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "pbkrtest",
+    "Version": "0.5.5",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "pcaMethods",
+    "Version": "2.0.0",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "pcaPP",
+    "Version": "2.0-5",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "performance",
+    "Version": "0.15.0",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "pillar",
+    "Version": "1.11.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "pkgconfig",
+    "Version": "2.0.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "plogr",
+    "Version": "0.2.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "plotly",
+    "Version": "4.11.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "plyr",
+    "Version": "1.8.9",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "png",
+    "Version": "0.1-8",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "polyclip",
+    "Version": "1.10-7",
+    "License": "BSL"
+  },
+  {
+    "Package": "pracma",
+    "Version": "2.4.4",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "preprocessCore",
+    "Version": "1.70.0",
+    "License": "LGPL (>= 2)"
+  },
+  {
+    "Package": "prettyunits",
+    "Version": "1.2.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "prismatic",
+    "Version": "1.1.2",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "processx",
+    "Version": "3.8.6",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "progress",
+    "Version": "1.2.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "progressr",
+    "Version": "0.15.1",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "promises",
+    "Version": "1.3.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "proxy",
+    "Version": "0.4-27",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "ps",
+    "Version": "1.9.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "purrr",
+    "Version": "1.1.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "qqman",
+    "Version": "0.1.9",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "quantreg",
+    "Version": "6.1",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "qvalue",
+    "Version": "2.40.0",
+    "License": "LGPL"
+  },
+  {
+    "Package": "rARPACK",
+    "Version": "0.11-0",
+    "License": "BSD_3_clause + file LICENSE"
+  },
+  {
+    "Package": "ragg",
+    "Version": "1.4.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "randomForest",
+    "Version": "4.7-1.2",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "rappdirs",
+    "Version": "0.3.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "rbibutils",
+    "Version": "2.3",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "readr",
+    "Version": "2.1.5",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "readxl",
+    "Version": "1.4.5",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "reformulas",
+    "Version": "0.4.1",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "rematch",
+    "Version": "2.0.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "rematch2",
+    "Version": "2.1.2",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "remotes",
+    "Version": "2.5.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "reprex",
+    "Version": "2.1.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "reshape",
+    "Version": "0.8.10",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "reshape2",
+    "Version": "1.4.4",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "rgl",
+    "Version": "1.3.24",
+    "License": "GPL"
+  },
+  {
+    "Package": "rjson",
+    "Version": "0.2.23",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "rlang",
+    "Version": "1.1.6",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "rmarkdown",
+    "Version": "2.29",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "rngtools",
+    "Version": "1.5.2",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "robust",
+    "Version": "0.7-5",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "robustbase",
+    "Version": "0.99-4-1",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "ropls",
+    "Version": "1.42.0",
+    "License": "CeCILL"
+  },
+  {
+    "Package": "rpart",
+    "Version": "4.1.24",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "rprojroot",
+    "Version": "2.1.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "rrcov",
+    "Version": "1.7-7",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "rstantools",
+    "Version": "2.4.0",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "rstatix",
+    "Version": "0.7.2",
+    "License": "GPL-2"
+  },
+  {
+    "Package": "rstudioapi",
+    "Version": "0.17.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "rsvd",
+    "Version": "1.0.5",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "rvest",
+    "Version": "1.0.4",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "sass",
+    "Version": "0.4.10",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "scales",
+    "Version": "1.4.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "scatterpie",
+    "Version": "0.2.5",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "selectr",
+    "Version": "0.4-2",
+    "License": "BSD_3_clause + file LICENCE"
+  },
+  {
+    "Package": "shape",
+    "Version": "1.4.6.1",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "shiny",
+    "Version": "1.11.1",
+    "License": "GPL-3 | file LICENSE"
+  },
+  {
+    "Package": "shinyFiles",
+    "Version": "0.9.3",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "shinyWidgets",
+    "Version": "0.9.0",
+    "License": "GPL-3"
+  },
+  {
+    "Package": "shinyalert",
+    "Version": "3.1.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "shinyjqui",
+    "Version": "0.4.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "shinyjs",
+    "Version": "2.1.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "shinythemes",
+    "Version": "1.2.0",
+    "License": "GPL-3 | file LICENSE"
+  },
+  {
+    "Package": "sitmo",
+    "Version": "2.0.2",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "snow",
+    "Version": "0.4-4",
+    "License": "GPL"
+  },
+  {
+    "Package": "sourcetools",
+    "Version": "0.1.7-1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "sparseMatrixStats",
+    "Version": "1.20.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "spatial",
+    "Version": "7.3-18",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "splines",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "statmod",
+    "Version": "1.5.0",
+    "License": "GPL-2 | GPL-3"
+  },
+  {
+    "Package": "stats",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "stats4",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "statsExpressions",
+    "Version": "1.7.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "stringi",
+    "Version": "1.8.7",
+    "License": "file LICENSE"
+  },
+  {
+    "Package": "stringr",
+    "Version": "1.5.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "survival",
+    "Version": "3.8-3",
+    "License": "LGPL (>= 2)"
+  },
+  {
+    "Package": "sxtTools",
+    "Version": "0.99.01",
+    "License": "GPL-2 | file LICENSE"
+  },
+  {
+    "Package": "sys",
+    "Version": "3.4.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "systemfonts",
+    "Version": "1.2.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "tcltk",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "textshaping",
+    "Version": "1.0.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "tibble",
+    "Version": "3.3.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "tidygraph",
+    "Version": "1.3.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "tidymass",
+    "Version": "2.0.10",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "tidyr",
+    "Version": "1.3.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "tidyselect",
+    "Version": "1.2.1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "tidytree",
+    "Version": "0.4.6",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "tidyverse",
+    "Version": "2.0.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "timechange",
+    "Version": "0.3.0",
+    "License": "GPL (>= 3)"
+  },
+  {
+    "Package": "tinytex",
+    "Version": "0.58",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "tools",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "treeio",
+    "Version": "1.32.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "tweenr",
+    "Version": "2.0.3",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "tzdb",
+    "Version": "0.5.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "utf8",
+    "Version": "1.2.6",
+    "License": "Apache License (== 2.0) | file LICENSE"
+  },
+  {
+    "Package": "utils",
+    "Version": "4.5.2",
+    "License": "Part of R 4.5.2"
+  },
+  {
+    "Package": "uuid",
+    "Version": "1.2-1",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "vctrs",
+    "Version": "0.6.5",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "viridis",
+    "Version": "0.6.5",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "viridisLite",
+    "Version": "0.4.2",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "vroom",
+    "Version": "1.6.5",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "vsn",
+    "Version": "3.76.0",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "withr",
+    "Version": "3.0.2",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "writexl",
+    "Version": "1.5.4",
+    "License": "BSD_2_clause + file LICENSE"
+  },
+  {
+    "Package": "xcms",
+    "Version": "4.6.3",
+    "License": "GPL (>= 2) + file LICENSE"
+  },
+  {
+    "Package": "xfun",
+    "Version": "0.53",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "xml2",
+    "Version": "1.4.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "xtable",
+    "Version": "1.8-4",
+    "License": "GPL (>= 2)"
+  },
+  {
+    "Package": "yaml",
+    "Version": "2.3.10",
+    "License": "BSD_3_clause + file LICENSE"
+  },
+  {
+    "Package": "yulab.utils",
+    "Version": "0.2.1",
+    "License": "Artistic-2.0"
+  },
+  {
+    "Package": "zeallot",
+    "Version": "0.2.0",
+    "License": "MIT + file LICENSE"
+  },
+  {
+    "Package": "zip",
+    "Version": "2.3.3",
+    "License": "MIT + file LICENSE"
+  }
+]
