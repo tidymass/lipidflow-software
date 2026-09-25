@@ -2,6 +2,7 @@
 module.exports = {
   extends: null,
   appId: 'org.lipidflow.desktop', productName: 'LipidFlow',
+  copyright: 'Copyright © 2026 Wang Lab',
   directories: {output: 'release/windows'},
   files: ['dist/**/*', 'electron/**/*', 'package.json'],
   extraResources: [{from:'backend',to:'backend'}, {from:'runtime/R',to:'runtime/R'}, {from:'docs/help',to:'help'}],
