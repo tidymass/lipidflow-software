@@ -22,3 +22,7 @@ For a complete study, prepare mzML/mzXML files, MS2 files for annotation, an int
 4. 数据表只是预览，完整 CSV、R 对象、图形和日志在每次运行的文件夹中。
 
 绝对定量沿用当前 lipidflowshiny 的方法：同一离子模式下，将 QC 中测得的内标峰面积用于各个样本。这不是逐样本测量内标的方法。所有浓度结果依赖输入的内标浓度和匹配关系。
+
+## Keyboard shortcuts
+
+On macOS, use **⌘W** to close the window and **⌘Q** to quit LipidFlow. On Windows, use **Ctrl+W** to close the window and **Ctrl+Q** to quit. With this single-window app, closing the last window exits the app. If an analysis is running, the existing confirmation dialog lets you keep it running or stop and quit. Standard Edit, View and Window shortcuts are listed in the application menus.
