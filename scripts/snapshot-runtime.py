@@ -25,6 +25,9 @@ def snapshot():
     for file in sorted((ROOT/'runtime/R/library').glob('*/DESCRIPTION')):
         d = dcf(file)
         name, version = d['Package'], d['Version']
+        # MetMiner is a separate TidyMass Shiny application, not used by LipidFlow.
+        if name == 'MetMiner':
+            continue
         baseline.append({'Package':name, 'Version':version, 'License':d.get('License','')})
         if d.get('Priority') in ('base','standard'):
             continue

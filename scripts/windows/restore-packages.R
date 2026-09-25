@@ -22,18 +22,11 @@ for (name in intersect(recommended, names(lock$Packages))) {
     renv::install(paste0(name, '@', record$Version), library=library_dir,
                   dependencies=FALSE, prompt=FALSE, rebuild=TRUE)
 }
-# Install bundled applications last: their upstream metadata may omit dependencies
-# that their namespaces load, so parallel restoration must not start them early.
-application_packages <- intersect('MetMiner', names(lock$Packages))
-dependency_lock <- lock
-dependency_lock$Packages[application_packages] <- NULL
-dependency_file <- tempfile(fileext='.lock')
-renv::lockfile_write(dependency_lock, dependency_file)
-renv::restore(project=getwd(), library=library_dir, lockfile=dependency_file,
-              prompt=FALSE, transactional=FALSE)
-unlink(dependency_file)
-renv::restore(project=getwd(), library=library_dir, lockfile=lockfile,
-              prompt=FALSE, transactional=FALSE)
+# A second pass restores pinned commits if upstream Remotes metadata repaired
+# a dependency source during the first pass. Scientific package versions stay locked.
+for (pass in seq_len(2L))
+  renv::restore(project=getwd(), library=library_dir, lockfile=lockfile,
+                prompt=FALSE, transactional=FALSE)
 # A restore is not successful if any package silently moved to a different version.
 p <- installed.packages(lib.loc=library_dir)
 for (record in lock$Packages) {

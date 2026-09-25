@@ -13,7 +13,7 @@ npm run bundle:r:windows
 npm run pack:windows
 ```
 
-The Windows runtime is restored from `packaging/r-packages.lock.json`, generated from the macOS package versions. Native packages are built for Windows; macOS binaries are never copied. The restore verifies every package version and writes source, license and native-binary manifests. End users do not need R, Rtools or Node.
+The Windows runtime is restored from `packaging/r-packages.lock.json`, generated from the macOS package versions. The unused MetMiner Shiny application inherited from TidyMass is excluded; no LipidFlow analysis function depends on it. Native packages are built for Windows; macOS binaries are never copied. The restore verifies every package version and writes source, license and native-binary manifests. End users do not need R, Rtools or Node.
 
 The unsigned per-user installer is written to `release/windows/LipidFlow-0.1.12-windows-x64-setup.exe`. Windows may display a publisher warning because no signing certificate is configured. Projects and application settings are preserved on uninstall.
 

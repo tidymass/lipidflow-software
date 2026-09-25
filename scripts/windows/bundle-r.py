@@ -33,7 +33,7 @@ def main():
             shutil.copytree(package,library/package.name)
     subprocess.run([rscript,'--vanilla',str(ROOT/'scripts/windows/restore-packages.R'),
                     str(ROOT/'packaging/r-packages.lock.json'),str(library)],cwd=ROOT,check=True)
-    shutil.copytree(library,stage/'library')
+    shutil.copytree(library,stage/'library',ignore=shutil.ignore_patterns('MetMiner','00LOCK*'))
     packages = [dcf(p) for p in sorted((stage/'library').glob('*/DESCRIPTION'))]
     baseline = json.loads((ROOT/'packaging/r-baseline.json').read_text())
     versions = {p['Package']:p['Version'] for p in packages}

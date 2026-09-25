@@ -344,18 +344,6 @@
       "Source": "Repository",
       "Repository": "CRAN"
     },
-    "MetMiner": {
-      "Package": "MetMiner",
-      "Version": "1.0.1",
-      "Imports": "config (>= 0.3.2), golem (>= 0.4.1), shiny (>= 1.8.1.1), MDAtoolkits, ggplot2, massdataset, metid, ComplexHeatmap, DT, PCAtools, RCurl, bsicons, circlize, clusterProfiler, dashboardthemes, dplyr, enrichplot, ggforce, ggrepel, ggsci, ggstatsplot, magrittr, masscleaner, massprocesser, plotly, purrr, ropls, shinyFiles, shinyWidgets, shinyjqui, shinyjs, shinythemes, stringr, tibble, tidyr, writexl, tidyverse, tidymass, shinyalert, colourpicker",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "ShawnWx2019",
-      "RemoteRepo": "MetMiner",
-      "RemoteRef": "6585bbccccd0fa82b18a4ead0086f94cf4fe9d3f",
-      "RemoteSha": "6585bbccccd0fa82b18a4ead0086f94cf4fe9d3f"
-    },
     "MetaboCoreUtils": {
       "Package": "MetaboCoreUtils",
       "Version": "1.16.1",

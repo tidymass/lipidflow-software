@@ -58,6 +58,7 @@ jobs:
         with:
           path: runtime/windows-library
           key: windows-r-v1-${{ hashFiles('packaging/r-packages.lock.json') }}
+          restore-keys: windows-r-v1-
       - name: Restore and bundle Windows R (locked to macOS baseline)
         env:
           GITHUB_PAT: ${{ github.token }}

@@ -205,11 +205,6 @@
     "License": "GPL (>= 2)"
   },
   {
-    "Package": "MetMiner",
-    "Version": "1.0.1",
-    "License": "MIT"
-  },
-  {
     "Package": "MetaboCoreUtils",
     "Version": "1.16.1",
     "License": "Artistic-2.0"
