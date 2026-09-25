@@ -26,3 +26,5 @@ For a complete study, prepare mzML/mzXML files, MS2 files for annotation, an int
 ## Keyboard shortcuts
 
 On macOS, use **⌘W** to close the window and **⌘Q** to quit LipidFlow. On Windows, use **Ctrl+W** to close the window and **Ctrl+Q** to quit. With this single-window app, closing the last window exits the app. If an analysis is running, the existing confirmation dialog lets you keep it running or stop and quit. Standard Edit, View and Window shortcuts are listed in the application menus.
+
+While a project is open, file and folder selection dialogs start in that project folder. You can navigate to another location each time.
