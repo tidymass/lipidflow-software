@@ -1,5 +1,6 @@
 const {spawnSync}=require('node:child_process');
-const {exe}=require('./runtime.cjs');
+const {exe,resources}=require('./runtime.cjs');
+require('../scripts/verify-packaged-resources.cjs').verify(resources);
 const {rEnvironment}=require('../electron/platform.cjs');
 function run(program,args,env=process.env){
   const result=spawnSync(program,args,{stdio:'inherit',env,windowsHide:true});

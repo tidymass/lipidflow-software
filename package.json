@@ -1,6 +1,6 @@
 {
   "name": "lipidflow-desktop",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "private": true,
   "description": "LipidFlow Desktop \u2014 local lipidomics analysis",
   "main": "electron/main.cjs",
@@ -54,7 +54,12 @@
       },
       {
         "from": "runtime",
-        "to": "runtime"
+        "to": "runtime",
+        "filter": [
+          "**/*",
+          "!R/library/lipidflow/POS{,/**/*}",
+          "!R/library/lipidflow/NEG{,/**/*}"
+        ]
       },
       {
         "from": "docs/help",
@@ -91,6 +96,7 @@
       ]
     },
     "electronDist": "node_modules/electron/dist",
-    "copyright": "Copyright \u00a9 2026 Wang Lab"
+    "copyright": "Copyright \u00a9 2026 Wang Lab",
+    "afterPack": "./scripts/verify-packaged-resources.cjs"
   }
 }
