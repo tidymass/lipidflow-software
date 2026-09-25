@@ -12,12 +12,12 @@ function plot(row,traces){
  const axes=[0,.25,.5,.75,1].map(f=>`<line x1="90" x2="950" y1="${325-f*225}" y2="${325-f*225}" stroke="#ddd"/><text x="80" y="${329-f*225}" text-anchor="end">${(high*f).toPrecision(3)}</text><text x="${90+860*f}" y="350" text-anchor="middle">${(min+(max-min)*f).toFixed(1)}</text>`).join('');
  return `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="${height}" viewBox="0 0 1000 ${height}"><rect width="100%" height="100%" fill="white"/><g font-family="Arial,sans-serif" font-size="12" fill="#333"><text x="40" y="30" font-size="19">${escape(row.IS_ID)} · ${escape(row.IS_Name)}</text><text x="40" y="55">Selected adduct: ${escape(row.Selected_Adduct)} · ${escape(row.Selection_Source)} · m/z ${escape(row.Target_mz)} · RT ${escape(row.Measured_RT)} s</text><text x="90" y="85">Intensity</text>${axes}${lines}<text x="510" y="380" text-anchor="middle">Retention time (s)</text>${has?'':'<text x="350" y="200">No EIC data available for this selected adduct.</text>'}</g></svg>`;
 }
-async function exportSelected({projectPath,runDir,run,side}){
+async function exportSelected({projectPath,destinationPath,runDir,run,side}){
  if(!['pos','neg'].includes(side)||run.status!=='completed'||run.result?.kind!=='extraction'||!run.result.sides.includes(side))throw Error('Choose a completed internal-standard result and polarity.');
  const table=run.result.tables.find(t=>t.name===side.toUpperCase()+' Y_IS_opt');if(!table||!/^[\w-]+$/.test(table.file))throw Error('Final table is unavailable.');
  const final=JSON.parse(await fs.readFile(path.join(runDir,'tables',table.file+'.json'),'utf8'));
  let traces=[];try{traces=JSON.parse(await fs.readFile(path.join(runDir,side.toUpperCase()+'_eic.json'),'utf8'))}catch(e){if(e.code!=='ENOENT')throw e}
- const parent=path.join(projectPath,'exports');await fs.mkdir(parent,{recursive:true});const dest=await fs.mkdtemp(path.join(parent,side.toUpperCase()+'-selected-'));const missing=[];
+ const parent=destinationPath||path.join(projectPath,'exports');await fs.mkdir(parent,{recursive:true});const dest=await fs.mkdtemp(path.join(parent,side.toUpperCase()+'-selected-'));const missing=[];
  try{
  await fs.mkdir(path.join(dest,'peak-shapes'));await fs.copyFile(path.join(runDir,'tables',table.file+'.csv'),path.join(dest,side.toUpperCase()+'_Y_IS_opt.csv'));
  const entries=[];let index=0;
